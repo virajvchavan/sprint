@@ -35,7 +35,7 @@
 <!-- header section -->
 <section class="banner" role="banner">
   <header id="header">
-    <div class="header-content clearfix"> <a class="logo" href="index.html">LEXIS</a>
+    <div class="header-content clearfix"> <a class="logo" href="index.html">SPRINT 2018</a>
       <nav class="navigation" role="navigation">
         <ul class="primary-nav">
           <li><a href="#intro">About</a></li>
@@ -51,10 +51,10 @@
   <div class="container">
     <div class="col-md-10 col-md-offset-1">
       <div class="banner-text text-center">
-        <h1 id="event_name">SPRINT 2018</h1>
-        <h3 id="event_date">Jung. Junoon. Jeet.<br>
-        January 22-24</h3><br>
-        <a href="#" class="btn btn-large">Register</a>
+        <img src="images/logo1.jpg" height="150px" style="opacity: 0.75; max-width: 70%;
+    height: auto;">
+        <br><br><br><br><br><br>
+        <a href="#" class="btn btn-large" style="margin-bottom: : 20px;">Register</a>
         <a href="#" class="btn btn-large">Download Rulebook</a> 
       </div>
       <!-- banner text --> 
@@ -201,8 +201,16 @@ Scheduled on the 20th, 21st and 22nd of January, the 2017 edition of SPRINT prom
   </div>
 </section>
 <!-- work section --> 
-<!-- our team section -->
-<!-- our team section --> 
+<section id="intro" class="section intro">
+  <div class="container">
+    <div class="col-md-8 col-md-offset-2 text-center">
+      <img src="images/Brochure-7.jpg" height="450px" style="max-width: 100%;
+    width: auto;"><br><br>
+      <img src="images/Brochure-8.jpg" height="450px" style="max-width: 100%;
+    width: auto;">
+    </div>
+  </div>
+</section>
 <!-- Testimonials section -->
 <section id="testimonials" class="section testimonials no-padding">
   <div class="container-fluid">
@@ -318,5 +326,21 @@ Scheduled on the 20th, 21st and 22nd of January, the 2017 edition of SPRINT prom
 <script src="js/modernizr.js"></script> 
 <script src="js/main.js"></script> 
 <script type="text/javascript" src="js/jquery.contact.js"></script>
+<script type="text/javascript">
+  function resizeImg() {
+    var curimg = $('.bgChange');
+    var ww = $(document).innerWidth(), hh = $(document).innerHeight();
+    if(hh > ww) {
+        curimg.height(hh);
+        var lft = - Math.floor((curimg.width() - ww) / 2);
+        curimg.css({"top":"0px", "left":lft});
+    }
+    else if(ww > hh) {
+        curimg.width(ww);
+        var tp = - Math.floor((curimg.height() - hh) / 2);
+        curimg.css({"left":"0px", "top":tp});
+    }
+
+</script>
 </body>
 </html>
