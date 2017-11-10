@@ -356,7 +356,10 @@ ul li {
 	padding-top: 100px;
 }
 .services {
-	margin-bottom: 50px;
+	margin-bottom: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	background-color: rgba(0, 0, 0, 0.05)
 }
 .services-content {
 	padding: 0 15px;
