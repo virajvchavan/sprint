@@ -356,6 +356,7 @@ ul li {
 	padding-top: 100px;
 }
 .services {
+	cursor: pointer;
 	margin-bottom: 30px;
 	padding-top: 15px;
 	padding-bottom: 15px;
@@ -385,7 +386,6 @@ ul li {
 	height: 200px;
 }
 .work .overlay {
-	background: rgba(0, 174, 218, 0.9);
 	height: 100%;
 	left: 0;
 	opacity: 0;
