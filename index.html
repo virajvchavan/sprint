@@ -12,30 +12,87 @@
   }
   .event_image{
    max-width: 100%; height: auto;}
-   #runner{
-  height: 240px;
-  position: absolute;
-  bottom: 35px;
-  left: 20px;
-}
-#worrior{
-  height: 290px;
-  position: absolute;
-  bottom: 35px;
-  right: 20px;
-}
+
 #banner_container{
   margin-left: 0px;
   margin-right: 0px;
 }
+#runner{
+    position: absolute;
+    height: 240px;
+    bottom: 35px;
+    left: 20px;
+
+    -webkit-animation-name: runner_animate; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+    animation-name: runner_animate;
+    animation-duration: 3s;
+    -webkit-animation-play-state: paused; /* Safari 4.0 - 8.0 */
+    animation-play-state: paused;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes runner_animate {
+    0%   {left:0px; }
+    100%  {left:65%;}
+
+}
+
+/* Standard syntax */
+@keyframes runner_animate {
+    0%   {left:0px; }
+    100%  {left:65%;}
+}
+#warrior{
+    height: 290px;
+    position: absolute;
+    bottom: 35px;
+    right: 20px;
+    -webkit-animation-name: runner_warrior; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+    animation-name: runner_warrior;
+    animation-duration: 3s;
+    -webkit-animation-play-state: paused; /* Safari 4.0 - 8.0 */
+    animation-play-state: paused;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes runner_warrior {
+    0%   {right:0px; }
+    100%  {right:65%;}
+
+}
+
+/* Standard syntax */
+@keyframes runner_warrior {
+    0%   {right:0px; }
+    100%  {right:65%;}
+}
+.fancybox-margin{margin-right:0px;}
+#body{
+  display: none;
+}
+
     </style> 
-  <style type="text/css">.fancybox-margin{margin-right:0px;}
-</style>
 
 </head>
-
 <body> 
+<section class="banner" role="banner" id="index">
+  <div class="container" id="banner_container">
+    <div class="col-12">
+      <div class="banner-text text-center">
+        <img id="runner" src="icons/runningMan.png">
+        <img id="warrior" src="icons/warrior.png">
+        <img src="icons/sprint.png" id="main_logo"/><br>
+        <h2 style="color: white; font-family:'Samarkan Normal';font-weight:normal;">Iss Ranbhoomi, Khel Jeetega</h2>
+        <h3 style="color: white; font-weight: bold;">12<sup>th</sup> - 14<sup>th</sup> January, 2018</h3>
+        <button style="margin-top: 10%; margin-bottom: 10%;" onclick="play()">click here</button>
+      </div>
+    </div>
+  </div>
+</section>
 
+<div id="body">
 <a href="#start"><img src="icons/up_button.png" id="fixedbutton"/></a> <!-- header section -->
 <span itemscope itemtype="http://schema.org/Event"><section class="banner" role="banner" id="start">
   <header id="header">
@@ -56,11 +113,8 @@
   <div class="container" id="banner_container">
     <div class="col-12">
       <div class="banner-text text-center">
-<!--          <img src="images/spjimr.png" height="60px" style="opacity:0.9; background-color: white; max-width: 20%; height: auto; margin-right: 400px auto; margin-bottom: 5px;"><br>
-        
-        -->
         <img id="runner" src="icons/runningMan.png">
-       <img id="worrior" src="icons/warrior.png">
+       <img id="warrior" src="icons/warrior.png">
        <br>
         <img src="icons/sprint.png" id="main_logo"/><br>
         <span style="font-size: 32px; color: white; padding: 10px; font-family:'Samarkan Normal';font-weight:normal;">Iss Ranbhoomi, Khel Jeetega</span><br>
@@ -660,7 +714,7 @@
         <div class="footer-col col-md-6">
           <h5>Our Location</h5>
           <p itemprop="location" itemscope itemtype="http://schema.org/Place">
-<span itemprop="name">SPJIMR, Mumbai</span><br/>
+            <span itemprop="name">SPJIMR, Mumbai</span><br/>
             1800 1234 56789 / 98532100987<br/>
             contact@email.com</p>
         </div>
@@ -674,17 +728,23 @@
             <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
           </ul>
         </div>
-        <div class="statcounter"><a title="web stats" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="//c.statcounter.com/11545515/0/23ee4ea9/0/" alt="web
-stats"/></a></div>
+        <div class="statcounter"><a title="web stats" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="//c.statcounter.com/11545515/0/23ee4ea9/0/" alt="webstats"/></a></div>
       </div>
     </div>
   </div>
-  <!--  footer top  --> 
-  
-</footer></span> <!-- Footer section --> <!-- JS FILES --> <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> <script src="js/bootstrap.min.js"></script> <script src="js/jquery.flexslider-min.js"></script> <script src="js/jquery.fancybox.pack.js"></script> <script src="js/retina.min.js"></script> <script src="js/modernizr.js"></script> <script src="js/main.js"></script> <script type="text/javascript" src="js/jquery.contact.js"></script> <!-- Start of StatCounter Code for Default Guide --> <script type="text/javascript"></script><script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script> <!-- End of StatCounter Code for Default Guide <a href="http://statcounter.com/p11545515/?guest=1">View My Stats</a> -->
+  <!--  footer top  --> </footer></span> </div>
+<!-- Footer section --> <!-- JS FILES --> <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> <script src="js/bootstrap.min.js"></script> <script src="js/jquery.flexslider-min.js"></script> <script src="js/jquery.fancybox.pack.js"></script> <script src="js/retina.min.js"></script> <script src="js/modernizr.js"></script> <script src="js/main.js"></script> <script type="text/javascript" src="js/jquery.contact.js"></script> <!-- Start of StatCounter Code for Default Guide --> <script type="text/javascript"></script><script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script> <!-- End of StatCounter Code for Default Guide <a href="http://statcounter.com/p11545515/?guest=1">View My Stats</a> -->
 
-<script type="text/javascript">
- 
-
+<script type="text/javascript"> 
+function play(){
+  console.log('asdsa');
+  $("#play").css('display','none');
+  $("#runner").css('animation-play-state','running');
+  $("#warrior").css('animation-play-state','running');
+  setTimeout(function(){
+    $("#index").remove();
+    $("#body").css('display','block');
+  },3000);
+} 
 </script>
  </body></html>
