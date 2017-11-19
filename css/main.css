@@ -7,7 +7,10 @@
 	Version: 1.0
 
 /* ------------------------------------------------------------------------------
-	Typography
+	Typography  
+
+	Orang: #f4511e;
+	Blue dark: #37474f; navin: #37474f;
 -------------------------------------------------------------------------------*/
 
 @import url(http://fonts.googleapis.com/css?family=Open%20Sans:300,400,500,600,700);
@@ -54,7 +57,7 @@ h5 {
 	text-transform: uppercase;
 }
 .btn:hover, .btn:focus {
-	background-color: #f24c28;
+	background-color: #f4511e;
 	color: #fff;
 }
 .btn-large {
@@ -87,7 +90,7 @@ ul li {
 }
 .section {
 	padding: 100px 0;
-	background-color: #f24c28;
+	background-color: #f4511e;
 }
 .no-padding {
 	padding: 0;
@@ -110,7 +113,7 @@ ul li {
 #header .header-content {
 	margin: 0 auto;
 	max-width: 1170px;
-	padding: 60px 0;
+	padding: 40px 0;
 	width: 100%;
 	-moz-transition: padding 0.3s;
 	-o-transition: padding 0.3s;
@@ -306,17 +309,18 @@ ul li {
 
 .banner {
 	background-image: url(../icons/sunset.jpg);
-	background-position: center top;
+	background-position: ;
 	background-repeat: no-repeat;
-	-moz-background-size: cover;
-	-o-background-size: cover;
-	-webkit-background-size: cover;
-	background-size: cover;
-	min-height: 700px;
+	-moz-background-size: auto 100%;
+	-o-background-size: auto 100%;
+	-webkit-background-size: auto 100%;
+	background-size: 100% 100%;
+	background-position: center;
+	min-height: 650px;
 }
 .banner-text {
-	padding-top: 16%;
-	margin-left: 120px;
+	padding-top: 10%;
+	margin-left: 100px;
 
 }
 .banner-text h1 {
@@ -340,7 +344,7 @@ ul li {
 	$intro
 ========================================================================== */
 .intro {
-	background-color: #1d132c;
+	background-color: rgb(31, 24, 48);
 }
 .intro h3 {
 	color: #fff;
@@ -356,7 +360,7 @@ ul li {
 -------------------------------------------------------------------------------*/
 .service-section {
 	padding-top: 10px;
-	background-color: #f24c28;
+	background-color: white;
 	padding-bottom: 40px;
 }
 .services {
@@ -364,13 +368,13 @@ ul li {
 	margin-bottom: 15px;
 	padding-top: 15px;
 	padding-bottom: 15px;
-	background-color: #1d132c;
+	background-color: rgb(31, 24, 48);
 	color: white;
 	margin-left:0px; 
 	border: solid rgba(255, 255, 255, 0.25) 1px; 
 }
   .services:hover{
-   background-color: rgba(29, 19, 44, 0.9);
+   background-color: rgba(29, 19, 44, 0.8);
  } 
 .services-content {
 	padding: 0 15px;
@@ -386,7 +390,7 @@ ul li {
 -------------------------------------------------------------------------------*/
 
 .works{
-	background-color: #f24c28;
+	background-color: white;
 	padding-top: 10px;
 }
 .work {
@@ -558,7 +562,7 @@ ul li {
 -------------------------------------------------------------------------------*/
 .conForm {
 	text-align: center;
-	background-color: #f24c28;
+	background-color: #f4511e;
 }
 .conForm h5 {
 	font-size: 30px;
@@ -594,7 +598,7 @@ ul li {
 	border-bottom: #e0e0e0 1px solid;
 }
 .conForm .submitBnt {
-	background: #1d132c;
+	background: #37474f;
 	color: #fff;
 	margin-top: 30px;
 padding:15px 30px 15px 30px;
@@ -634,11 +638,11 @@ padding:15px 30px 15px 30px;
 	text-align: left;
 }
 .footer-top {
-	background-color: #1d132c;
+	background-color: rgb(31, 24, 48);
 	padding-top: 50px;
 }
 .footer-bottom {
-	background-color: #1d132c;
+	background-color: rgb(31, 24, 48);
 	padding: 20px 0;
 }
 .footer .footer-col {
@@ -675,4 +679,33 @@ padding:15px 30px 15px 30px;
 	color: #e84545;
 	font-size: 11px;
 	margin: 0 2px;
+}
+ #main_logo{
+  padding: 10px;
+  max-width: 40%;
+  height: auto;
+  margin-left: 70px;
+  }
+
+@media (max-width: 640px) {
+    #runner, #worrior{
+    	display: none;
+    }
+    #main_logo{
+    	max-width: 100%;
+    	max-height: 100%;
+    	margin-left: 0px;
+    }
+    .banner-text {
+	margin-left: 0px;
+	}
+	.banner {
+	background-repeat: no-repeat;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: top center;
+	min-height: 650px;
+}
 }

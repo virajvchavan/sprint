@@ -542,17 +542,9 @@ site design / logo © 2017 Stack Exchange Inc; user contributions licensed under
 
 	<script type="text/javascript" src="js/jquery.min.js"></script>
 	<script type="text/javascript">
-	    $(document).ready(function () {
-		    $('#overlay').fadeIn();
-		});
-
-		$('#button').click(function () {
-			$('#overlay').fadeOut(200, "linear");
-		});
-
-    $('#the_text').on("mousewheel", function() {
-        alert("sdf");
-    }); 	
+	    $("body").scroll(function(){
+    alert("as");
+});	
 	</script>
 </body>
 </html>
