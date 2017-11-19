@@ -681,10 +681,8 @@ padding:15px 30px 15px 30px;
 	margin: 0 2px;
 }
  #main_logo{
-  padding: 10px;
-  max-width: 40%;
   height: auto;
-  margin-left: 70px;
+  max-width: 40%;
   }
 
 @media (max-width: 640px) {
