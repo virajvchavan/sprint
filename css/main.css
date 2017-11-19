@@ -15,7 +15,7 @@
 p {
 	font-size: 13px;
 	line-height: 22.4px;
-	color: #6c7279;
+	color: rgba(255, 255, 255, 0.7);
 }
 h1 {
 	font-size: 65px;
@@ -37,12 +37,12 @@ h4 {
 }
 h5 {
 	font-size: 14px;
-	color: #2d3033;
+	color: #eaeaea;
 	text-transform: uppercase;
 	font-weight: 700;
 }
 .btn {
-	background-color: #00796B;
+	background-color: #000835;
 	color: #fff;
 	font-size: 13px;
 	font-weight: 600;
@@ -54,7 +54,7 @@ h5 {
 	text-transform: uppercase;
 }
 .btn:hover, .btn:focus {
-	background-color: #3d3d3d;
+	background-color: #f24c28;
 	color: #fff;
 }
 .btn-large {
@@ -87,6 +87,7 @@ ul li {
 }
 .section {
 	padding: 100px 0;
+	background-color: #f24c28;
 }
 .no-padding {
 	padding: 0;
@@ -304,17 +305,18 @@ ul li {
 -------------------------------------------------------------------------------*/
 
 .banner {
-	background-image: url(../images/banner.jpg);
+	background-image: url(../icons/sunset.jpg);
 	background-position: center top;
 	background-repeat: no-repeat;
 	-moz-background-size: cover;
 	-o-background-size: cover;
 	-webkit-background-size: cover;
 	background-size: cover;
-	min-height: 750px;
+	min-height: 700px;
 }
 .banner-text {
-	padding-top: 22%;
+	padding-top: 16%;
+	margin-left: 120px;
 
 }
 .banner-text h1 {
@@ -331,14 +333,14 @@ ul li {
 	font-size: 16px;
 	font-weight: 400;
 	line-height: 24px;
-	margin-top: 30px;
+	margin-top: 25px;
 	margin-bottom: 80px;
 }
 /* ==========================================================================
 	$intro
 ========================================================================== */
 .intro {
-	background-color: #00aeda;
+	background-color: #1d132c;
 }
 .intro h3 {
 	color: #fff;
@@ -353,27 +355,40 @@ ul li {
 	 Serives
 -------------------------------------------------------------------------------*/
 .service-section {
-	padding-top: 100px;
+	padding-top: 10px;
+	background-color: #f24c28;
+	padding-bottom: 40px;
 }
 .services {
 	cursor: pointer;
-	margin-bottom: 30px;
+	margin-bottom: 15px;
 	padding-top: 15px;
 	padding-bottom: 15px;
-	background-color: rgba(0, 0, 0, 0.05)
+	background-color: #1d132c;
+	color: white;
+	margin-left:0px; 
+	border: solid rgba(255, 255, 255, 0.25) 1px; 
 }
+  .services:hover{
+   background-color: rgba(29, 19, 44, 0.9);
+ } 
 .services-content {
 	padding: 0 15px;
 	margin-top: 30px;
 }
 .services .icon {
-	color: #00aeda;
+	color: white;
 	font-size: 50px;
 	padding-left: 15px;
 }
 /* ------------------------------------------------------------------------------
 	 Works
 -------------------------------------------------------------------------------*/
+
+.works{
+	background-color: #f24c28;
+	padding-top: 10px;
+}
 .work {
 	-moz-box-shadow: 0 0 0 1px #fff;
 	-webkit-box-shadow: 0 0 0 1px #fff;
@@ -414,7 +429,7 @@ ul li {
 	transition: all, 0.5s;
 }
 .work h5, .work p {
-	color: #fff;
+	color: white;
 	margin: 0;
 	opacity: 0;
 }
@@ -543,6 +558,7 @@ ul li {
 -------------------------------------------------------------------------------*/
 .conForm {
 	text-align: center;
+	background-color: #f24c28;
 }
 .conForm h5 {
 	font-size: 30px;
@@ -578,7 +594,7 @@ ul li {
 	border-bottom: #e0e0e0 1px solid;
 }
 .conForm .submitBnt {
-	background: #3bc492;
+	background: #1d132c;
 	color: #fff;
 	margin-top: 30px;
 padding:15px 30px 15px 30px;
@@ -618,11 +634,11 @@ padding:15px 30px 15px 30px;
 	text-align: left;
 }
 .footer-top {
-	background-color: #181818;
+	background-color: #1d132c;
 	padding-top: 50px;
 }
 .footer-bottom {
-	background-color: #313454;
+	background-color: #1d132c;
 	padding: 20px 0;
 }
 .footer .footer-col {
