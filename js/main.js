@@ -56,3 +56,11 @@ $(document).ready(function() {
 
 
 });
+
+if ($(window).width() <= 450) {  
+
+              // is mobile device
+              $('body').css('overflow','auto');
+      		$('body').css('scroll','yes');
+       }            
+
