@@ -56,7 +56,3 @@ $(document).ready(function() {
 
 
 });
-function scrollScript()
-{
-	alert("asd");
-}

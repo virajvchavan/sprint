@@ -29,6 +29,14 @@
     animation-duration: 3s;
     -webkit-animation-play-state: paused; /* Safari 4.0 - 8.0 */
     animation-play-state: paused;
+    animation-fill-mode: forwards;
+}
+#enterBtn:hover{
+  -webkit-transform: scale(1.2); /* Saf3.1+, Chrome */
+     -moz-transform: scale(1.2); /* FF3.5+ */
+      -ms-transform: scale(1.2); /* IE9 */
+       -o-transform: scale(1.2); /* Opera 10.5+ */
+          transform: scale(1.2);
 }
 
 /* Safari 4.0 - 8.0 */
@@ -43,6 +51,30 @@
     0%   {left:0px; }
     100%  {left:65%;}
 }
+
+#index{
+
+      -webkit-animation-name: animate_index; /* Safari 4.0 - 8.0 */
+    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
+    animation-name: animate_index;
+    animation-duration: 3s;
+    -webkit-animation-play-state: paused; /* Safari 4.0 - 8.0 */
+    animation-play-state: paused;
+    position: fixed;
+    z-index: 1000;
+    width: 100%; 
+}
+
+@keyframes animate_index{
+  0% {bottom: 0%;}
+  100% {bottom: 100%;}
+}
+
+@-webkit-keyframes animate_index {
+  0% {bottom: 0%;}
+  100% {bottom: 100%;}
+}
+
 #warrior{
     height: 290px;
     position: absolute;
@@ -54,6 +86,7 @@
     animation-duration: 3s;
     -webkit-animation-play-state: paused; /* Safari 4.0 - 8.0 */
     animation-play-state: paused;
+    animation-fill-mode: forwards;
 }
 
 /* Safari 4.0 - 8.0 */
@@ -70,26 +103,26 @@
 }
 .fancybox-margin{margin-right:0px;}
 #body{
-  display: none;
+  display: block;
 }
-
-    </style> 
+#enterBtn{
+  position: relative;
+  top: 500px;
+  left: 50%;
+  background-color: black;
+}
+</style> 
 
 </head>
-<body> 
+<body scroll="no" style="overflow: hidden"> 
 <section class="banner" role="banner" id="index">
-  <div class="container" id="banner_container">
-    <div class="col-12">
-      <div class="banner-text text-center">
+    <div class="col-12">   
         <img id="runner" src="icons/runningMan.png">
-        <img id="warrior" src="icons/warrior.png">
-        <img src="icons/sprint.png" id="main_logo"/><br>
-        <h2 style="color: white; font-family:'Samarkan Normal';font-weight:normal;">Iss Ranbhoomi, Khel Jeetega</h2>
-        <h3 style="color: white; font-weight: bold;">12<sup>th</sup> - 14<sup>th</sup> January, 2018</h3>
-        <button style="margin-top: 10%; margin-bottom: 10%;" onclick="play()">click here</button>
-      </div>
+        <img id="warrior" src="icons/warrior.png">        
     </div>
-  </div>
+    <div class="arrow bounce" id="enterBtn" onclick="play()">
+      <br>
+</div>
 </section>
 
 <div id="body">
@@ -119,10 +152,10 @@
         <img src="icons/sprint.png" id="main_logo"/><br>
         <span style="font-size: 32px; color: white; padding: 10px; font-family:'Samarkan Normal';font-weight:normal;">Iss Ranbhoomi, Khel Jeetega</span><br>
         <span style="color: white; font-size: 20px; font-family: 'Catamaran', sans-serif; padding: 2px;">12th - 14th January, 2018</span><br><br><br>
-        <!-- Add this shit later
+        
         <a href="#" class="btn" style="margin-bottom: 20px;">Register</a>  &nbsp;&nbsp;  
         <a href="#" class="btn" style="margin-bottom: 20px;">Download Rulebook</a> 
-      -->
+      
       </div>
       <!--  banner text  --> 
     </div>
@@ -737,14 +770,23 @@
 
 <script type="text/javascript"> 
 function play(){
+        $('body').css('overflow','auto');
+      $('body').css('scroll','yes');
   console.log('asdsa');
   $("#play").css('display','none');
   $("#runner").css('animation-play-state','running');
   $("#warrior").css('animation-play-state','running');
   setTimeout(function(){
-    $("#index").remove();
-    $("#body").css('display','block');
+    $("#index").css('animation-play-state','running');
+
+     setTimeout(function(){
+      $('#index').remove();
+
+   },3000);
+
   },3000);
+
+  $("#enterBtn").css('display', 'none');
 } 
 </script>
  </body></html>
