@@ -56,11 +56,23 @@ $(document).ready(function() {
 
 
 });
+/*$("#banner_container").hover(function(){
+	$('body').css('overflow','auto');
+    $('body').css('scroll','yes');
+});*/
+$("#banner_container").mouseenter(function(){
+	$('body').css('overflow','auto');
+    $('body').css('scroll','yes');
+});
 
-if ($(window).width() <= 450) {  
+$('#mobile_start_btn').click(function() {      // When arrow is clicked
+    $('body').css('overflow','auto');
+    $('body').css('scroll','yes');
+});   
 
-              // is mobile device
-              $('body').css('overflow','auto');
-      		$('body').css('scroll','yes');
-       }            
+$('#fixedbutton').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 500);
+});            
 

@@ -10,6 +10,13 @@
   #fixedbutton { 
     position: fixed; bottom: 0px; right: 0px; padding: 20px; z-index: 10; height: 75px; 
   }
+  #fixedbutton:hover{
+    -webkit-transform: scale(1.2); /* Saf3.1+, Chrome */
+     -moz-transform: scale(1.2); /* FF3.5+ */
+      -ms-transform: scale(1.2); /* IE9 */
+       -o-transform: scale(1.2); /* Opera 10.5+ */
+          transform: scale(1.2);
+  }
   .event_image{
    max-width: 100%; height: auto;}
 
@@ -125,7 +132,7 @@
 </section>
 
 <div id="body">
-<a href="#start"><img src="icons/up_button.png" id="fixedbutton"/></a> <!-- header section -->
+<a><img src="icons/up_button.png" id="fixedbutton"/></a> <!-- header section -->
 <span itemscope itemtype="http://schema.org/Event"><section class="banner" role="banner" id="start">
   <header id="header">
     <div class="header-content clearfix"> <a class="logo" href="index.html">
@@ -151,6 +158,8 @@
         <img src="icons/sprint.png" id="main_logo"/><br>
         <span style="font-size: 32px; color: white; padding: 10px; font-family:'Samarkan Normal';font-weight:normal;">Iss Ranbhoomi, Khel Jeetega</span><br>
         <span style="color: white; font-size: 20px; font-family: 'Catamaran', sans-serif; padding: 2px;">12th - 14th January, 2018</span><br><br><br>
+
+        <a id="mobile_start_btn" class="btn btn-small" href="#video">Start</a>
         <!--
         <a href="#" class="btn" style="margin-bottom: 20px;">Register</a>  &nbsp;&nbsp;  
         <a href="#" class="btn" style="margin-bottom: 20px;">Download Rulebook</a> 
@@ -280,7 +289,7 @@
         <span class="icon"><img src="icons/cricket.png" alt=""/></span>
         <div class="services-content">
           <h5>Cricket</h5>
-          <b><i class="fa fa-phone" ></i></b>  9874461030 (Abhratanu Dutta) </p>
+          <b><i class="fa fa-phone" ></i></b>  9874461030 (Abhratanu Dutta)
         </div>
       </div>
       <div class="modal fade" id="formal-4" role="dialog">
@@ -308,7 +317,7 @@
         <span class="icon"><img src="icons/volleyball.png" alt=""/></span>
         <div class="services-content">
           <h5>Volleyball</h5>
-          <b><i class="fa fa-phone" ></i></b>  9711367610 (Bhawna Sharma) </p>
+          <b><i class="fa fa-phone" ></i></b>  9711367610 (Bhawna Sharma) 
         </div>
       </div>
       <div class="modal fade" id="formal-5" role="dialog">
@@ -334,7 +343,7 @@
         <span class="icon"><img src="icons/badminton.png" alt=""/></span>
         <div class="services-content">
           <h5>Badminton</h5>
-          <b><i class="fa fa-phone" ></i></b>  9008836569 (Nitin Samanta) </p>
+          <b><i class="fa fa-phone" ></i></b>  9008836569 (Nitin Samanta)
         </div>
       </div>
       <div class="modal fade" id="formal-6" role="dialog">
@@ -361,7 +370,7 @@
         <span class="icon"><img src="icons/futsal.png" alt=""/></span>
         <div class="services-content">
           <h5>Futsal</h5>
-          <b><i class="fa fa-phone" ></i></b>  9674526424 (Gaurav Patel) </p>
+          <b><i class="fa fa-phone" ></i></b>  9674526424 (Gaurav Patel)
         </div>
       </div>
       <div class="modal fade" id="formal-7" role="dialog">
@@ -388,7 +397,7 @@
         <span class="icon"><img src="icons/running.png" alt=""/></span>
         <div class="services-content">
           <h5>Athletics</h5>
-          <b><i class="fa fa-phone" ></i></b> 8087000820 (Prashant Iyer) </p>
+          <b><i class="fa fa-phone" ></i></b> 8087000820 (Prashant Iyer) 
         </div>
       </div>
       <div class="modal fade" id="formal-8" role="dialog">
@@ -444,7 +453,7 @@
         <span class="icon"><img src="icons/carrom.png" alt=""/></span>
         <div class="services-content">
           <h5>Carrom</h5>
-          <b><i class="fa fa-phone" ></i></b> 9825179269 (Saurabh Sinha) </p>
+          <b><i class="fa fa-phone" ></i></b> 9825179269 (Saurabh Sinha)
         </div>
       </div>
       <div class="modal fade" id="formal-10" role="dialog">
@@ -472,7 +481,7 @@
         <span class="icon"><img src="icons/table-tennis.png" alt=""/></span>
         <div class="services-content">
           <h5>Table Tennis</h5>
-          <b><i class="fa fa-phone" ></i></b> 7022250565 (Sidhant Malhotra) </p>
+          <b><i class="fa fa-phone" ></i></b> 7022250565 (Sidhant Malhotra) 
         </div>
       </div>
       <div class="modal fade" id="formal-11" role="dialog">
@@ -499,7 +508,7 @@
         <span class="icon"><img src="icons/squash.png" alt=""/></span>
         <div class="services-content">
           <h5>Squash</h5>
-          <b><i class="fa fa-phone" ></i></b> 8853022987 (Rajat Jain) </p>
+          <b><i class="fa fa-phone" ></i></b> 8853022987 (Rajat Jain) 
         </div>
       </div>
       <div class="modal fade" id="formal-12" role="dialog">
@@ -526,7 +535,7 @@
         <span class="icon"><img src="icons/crown.png" alt=""/></span>
         <div class="services-content">
           <h5>Chess</h5>
-          <b><i class="fa fa-phone" ></i></b>  9662678208 (Pallav Joshi)  </p>
+          <b><i class="fa fa-phone" ></i></b>  9662678208 (Pallav Joshi) 
         </div>
       </div>
     </div>
@@ -558,7 +567,7 @@
         <span class="icon"><img src="icons/foosball.png" alt=""/></span>
         <div class="services-content">
           <h5>Foosball</h5>
-          <b><i class="fa fa-phone" ></i></b>  8989474084 (Subrat Sharma) </p>
+          <b><i class="fa fa-phone" ></i></b>  8989474084 (Subrat Sharma)
         </div>
       </div>
       <div class="modal fade" id="informal-1" role="dialog">
@@ -585,7 +594,7 @@
         <span class="icon"><img src="icons/zorbing.png" alt=""/></span>
         <div class="services-content">
           <h5>Zorbing</h5>
-          <b><i class="fa fa-phone" ></i></b>  9674527335 (Yash Goenka) </p>
+          <b><i class="fa fa-phone" ></i></b>  9674527335 (Yash Goenka) 
         </div>
       </div>
       <div class="modal fade" id="informal-2" role="dialog">
@@ -612,7 +621,7 @@
         <span class="icon"><img src="icons/paintball.png" alt=""/></span>
         <div class="services-content">
           <h5>Paintball</h5>
-          <b><i class="fa fa-phone" ></i></b> 8295800295 (Rahul Gupta)  </p>
+          <b><i class="fa fa-phone" ></i></b> 8295800295 (Rahul Gupta)  
         </div>
       </div>
       <div class="modal fade" id="informal-3" role="dialog">
@@ -637,7 +646,7 @@
         <span class="icon"><img src="icons/slip.png" alt=""/></span>
         <div class="services-content">
           <h5>Slip Soccer</h5>
-          <b><i class="fa fa-phone" ></i></b> 7093322302 (Ankit Yadav)  </p>
+          <b><i class="fa fa-phone" ></i></b> 7093322302 (Ankit Yadav) 
         </div>
       </div>
       <div class="modal fade" id="informal-4" role="dialog">
@@ -649,7 +658,7 @@
             </div>
             <div class="modal-body">
               <img src="images/slip-soccer.jpg" alt="slip-soccer" class="event_image"/>
-              <h3>Prizes:</h3> <ul> <li><b>Winner:-</b> Coming Soon.</li> <li><b>Runner:-</b> Coming Soon </li> </ul> <h3>Contact</h3> <b><i class="fa fa-phone" ></i></b>   7093322302 (Ankit Yadav) </p>
+              <h3>Prizes:</h3> <ul> <li><b>Winner:-</b> Coming Soon.</li> <li><b>Runner:-</b> Coming Soon </li> </ul> <h3>Contact</h3> <b><i class="fa fa-phone" ></i></b>   7093322302 (Ankit Yadav)
             </div>
             <div class="modal-footer">
               <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -775,7 +784,6 @@
             <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
           </ul>
         </div>
-        <div class="statcounter"><a title="web stats" href="http://statcounter.com/" target="_blank"><img class="statcounter" src="//c.statcounter.com/11545515/0/23ee4ea9/0/" alt="webstats"/></a></div>
       </div>
     </div>
   </div>

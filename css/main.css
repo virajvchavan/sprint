@@ -682,9 +682,18 @@ padding:15px 30px 15px 30px;
   max-width: 40%;
   }
 
+@media (min-width: 641px) {
+    #mobile_start_btn{
+    	display: none;
+    }
+}
+
 @media (max-width: 640px) {
     #runner, #warrior, #index{
     	display: none;
+    }
+    #mobile_start_btn{
+    	display: block;
     }
     #main_logo{
     	max-width: 100%;
