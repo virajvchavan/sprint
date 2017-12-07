@@ -95,7 +95,6 @@ ul li {
 }
 .section {
 	padding: 100px 0;
-	background-color: #f4511e;
 }
 .no-padding {
 	padding: 0;
@@ -318,15 +317,18 @@ html {
   -o-background-size: cover;
   background-size: cover;
 }
-.banner {
+.front{
 	background-image: url(../icons/sunset.jpg);
-	background-position: ;
+		background-position: ;
 	background-repeat: no-repeat;
 	-moz-background-size: auto 100%;
 	-o-background-size: auto 100%;
 	-webkit-background-size: auto 100%;
 	background-size: 100% 100%;
 	background-position: center;
+	min-height: 650px;
+}
+.banner {
 	min-height: 650px;
 }
 .banner-text {
@@ -354,9 +356,7 @@ html {
 /* ==========================================================================
 	$intro
 ========================================================================== */
-.intro {
-	background-color: rgb(31, 24, 48);
-}
+
 .intro h3 {
 	color: #fff;
 	margin-top: 0;
@@ -371,7 +371,6 @@ html {
 -------------------------------------------------------------------------------*/
 .service-section {
 	padding-top: 10px;
-	background-color: white;
 	padding-bottom: 40px;
 }
 .services {
@@ -412,10 +411,7 @@ html {
 -------------------------------------------------------------------------------*/
 
 .works{
-	background-color: white;
 	padding-top: 10px;
-	padding-left: 90px;
-	padding-right: 90px;
 }
 .work {
 	-moz-box-shadow: 0 0 0 1px #fff;
@@ -714,7 +710,7 @@ padding:15px 30px 15px 30px;
 
 .sponsor_outer{
 	height: 100px;
-	margin-bottom: 40px;
+	margin-bottom: 30px;
 }
 
 .sponsor_logo{
@@ -856,7 +852,12 @@ body {
 	padding-top: 50px;
 }
 
-.sponsor_outer a{
-	pointer-events: none;
-   cursor: default;
+
+body{
+    background-image: url(../icons/sunset.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    min-width: 100%;
+    background-position: center;
+    background-size: cover;
 }
