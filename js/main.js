@@ -80,3 +80,6 @@ $('#fixedbutton').click(function() {      // When arrow is clicked
     }, 500);
 });            
 
+$("#register_icon").click(function(){
+	$('#register_modal').modal('toggle');
+})

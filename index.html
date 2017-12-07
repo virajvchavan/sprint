@@ -155,12 +155,12 @@
   <!--  banner text  -->
   <div class="container" id="banner_container" style="width: 100%">
     <div class="col-12">
-      <div class="banner-text text-center" style="margin-left: 0px;">
+      <div class="banner-text text-center">
         <img id="runner" src="icons/runningMan.png">
        <img id="warrior" src="icons/warrior.png">
-       <span style="color: white; font-size: 16px;">SPJIMR Presents</span>
+       <span style="color: white; font-size: 16px;"><b>SPJIMR Presents</b></span>
        <br>
-        <img src="icons/sprint.png" id="main_logo"/><br>
+        <img src="icons/sprint.png" id="main_logo" style="margin-left: 10px;"/><br>
         <span style="font-size: 32px; color: white; padding: 10px; font-family:'Samarkan Normal';font-weight:normal;">Iss Ranbhoomi, Khel Jeetega</span><br>
         <span style="color: white; font-size: 20px; font-family: 'Catamaran', sans-serif; padding: 2px;">12th - 14th January, 2018</span><br><br><br>
 
@@ -203,20 +203,43 @@ So charge up for the adrenaline-rush experience at the beginning of the new year
     </div>
   </div>
 </section>
-<!--  intro section  --> 
+<!--  intro section  -->
+
 <!--  services section  -->
 <section id="events" class="service-section text-center">
-  <br>
-  <h5 style="padding: 10px;">Formal Events 
-    <br><br>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8Gr0uxwyuwR981pMjAnfbS_8a6ZY2SDNt3wGmeQ0_KULcNw/viewform" class="btn btn-priary reg_btn" target="_blank">Register Now!</a>
-    <a href="https://docs.google.com/forms/d/e/1FAIpQLSe8Gr0uxwyuwR981pMjAnfbS_8a6ZY2SDNt3wGmeQ0_KULcNw/viewform" class="btn btn-priary reg_btn" target="_blank">Rulebook</a>
+  <h5 style="padding: 10px; margin-left: 295px;">Formal Events 
+    <div class="pull-right" style="padding:5px; margin-right: 80px;">
+    <table id="downtable">
+      <tr>
+      <a><td><img src="icons/download.png" style="cursor: pointer;"></td></a>
+      <td><div data-toggle="modal" data-target="#register_modal" style="cursor: pointer;" id="registration_icon"><img src="icons/register.png" alt=""></div></td>
+    </tr>
+    <tr>
+      <td>
+    <a class="btn btn-priary reg_btn" target="_blank">Rulebook</a>
+  </td>
+  <td>
+    <a class="btn btn-priary reg_btn" target="_blank">Register</a></td>
+  </tr>
+  </table>
+    </div>
 
-  </h5><br>
+    <div class="modal fade" id="register_modal" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body" style="height: 550px;">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe8Gr0uxwyuwR981pMjAnfbS_8a6ZY2SDNt3wGmeQ0_KULcNw/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+    </div>
+
+  </h5><br><br><br>
   <div class="container">
-  
     <div class="row">
-
       <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-1"> 
         <span class="icon"><img src="icons/tennis.png" alt="" class="event_logo"/></span>
         <div class="services-content">
@@ -707,104 +730,91 @@ So charge up for the adrenaline-rush experience at the beginning of the new year
       <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/img-8.jpg" class="work-box"> <img src="images/img-8.jpg" alt=""/>
         <div class="overlay">
           
-        </div>
-        <!--  overlay  --> 
-        </a> </div>
-        <br>
-    </div>
-  </div>
-  <br><br><br>
-</section>
-<!--  sponsors section  -->
-<section id="sponsors" class="service-section text-center">
-  <br>
-  <h5 style="padding: 10px;">Our Sponsors</h5><br>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="http://www.aircel.com" target="_blank"><img class="sponsor_logo" src="icons/sponsors/aircel.png" alt="bad"></a> 
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="https://www.americanexpress.com/in/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/americanexpress.png" alt="bad"></a> 
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="https://www.axisbank.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/axisbank.png" alt="bad"></a> 
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="http://www.bikaji.in" target="_blank"><img class="sponsor_logo" src="icons/sponsors/bikaji.png" alt="bad"></a> 
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="http://www.bankofindia.co.in/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/boi.png" alt="bad"></a> 
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/box8_.png" alt="bad"></a> 
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="https://www.coca-colaindia.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/cocacola.png" alt="bad"></a> 
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="http://www.corpbank.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/corporationbank2.png" alt="bad"></a> 
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="https://www.dominos.co.in/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/dominos.png" alt="bad"></a> 
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="http://www.donear.com/donear2006/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/donear.gif" alt="bad"></a> 
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="http://bites.livefiesta.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/fiestabites.png" alt="bad"></a> 
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="https://www.freecharge.in/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/freecharge.png" alt="bad"></a> 
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="http://www.freepressjournal.in/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/freepress.jpg" alt="bad"></a> 
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="https://www.gatorade.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/gatorade.png" alt="bad"></a> 
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="http://www.gorb.in/web/index/index" target="_blank"><img class="sponsor_logo" src="icons/sponsors/gorb.png" alt="bad"></a> 
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="http://www.guiddoo.com/about" target="_blank"><img class="sponsor_logo" src="icons/sponsors/guiddoo.png" alt="bad"></a> 
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="https://www.hdfcbank.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/hdfcbanklogo.png" alt="bad"></a> 
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/healthspring.png" alt="bad"></a> 
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/hokeypokey.jpg" alt="bad"></a> 
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="https://www.icicibank.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/icicibank.png" alt="bad"></a> 
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="https://www.iciciprulife.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/iciciprudential.png" alt="bad"></a> 
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="http://www.killerjeans.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/killer.png" alt="bad"></a> 
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/klounge.jpg" alt="bad"></a> 
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="https://www.kotak.com/en.html" target="_blank"><img class="sponsor_logo" src="icons/sponsors/kotak.png" alt="bad"></a> 
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="https://www.livefiesta.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/livefiesta.png" alt="bad"></a> 
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="https://www.mcdonaldsindia.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/macd.png" alt="bad"></a> 
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="http://www.mapro.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/mapro.png" alt="bad"></a>
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/mod.png" alt="bad"></a>
-      </div>
+        </div>         <!--  overlay  -->          </a> </div>         <br>
+</div>   </div>   <br><br><br> </section> <!--  sponsors section  --> <section
+id="sponsors" class="service-section text-center">   <br>   <h5
+style="padding: 10px;">Our Sponsors</h5><br>   <div class="container">
+<div class="row">       <div class="col-md-2 col-xs-6 sponsor_outer">
+<a href="http://www.aircel.com" target="_blank"><img class="sponsor_logo"
+src="icons/sponsors/aircel.png" alt="bad"></a>        </div>       <div class
+="col-md-2 col-xs-6 sponsor_outer">         <a
+href="https://www.americanexpress.com/in/" target="_blank"><img
+class="sponsor_logo" src="icons/sponsors/americanexpress.png" alt="bad"></a>
+</div>       <div class="col-md-2 col-xs-6 sponsor_outer">         <a
+href="https://www.axisbank.com/" target="_blank"><img class="sponsor_logo"
+src="icons/sponsors/axisbank.png" alt="bad"></a>        </div>       <div
+class="col-md-2 col-xs-6 sponsor_outer">         <a
+href="http://www.bikaji.in" target="_blank"><img class="sponsor_logo"
+src="icons/sponsors/bikaji.png" alt="bad"></a>        </div>       <div class
+="col-md-2 col-xs-6 sponsor_outer">         <a
+href="http://www.bankofindia.co.in/" target="_blank"><img class="sponsor_logo"
+src="icons/sponsors/boi.png" alt="bad"></a>        </div>       <div class
+="col-md-2 col-xs-6 sponsor_outer">         <a href="#" target="_blank"><img
+class="sponsor_logo" src="icons/sponsors/box8_.png" alt="bad"></a>
+</div>       <div class="col-md-2 col-xs-6 sponsor_outer">         <a
+href="https://www.coca-colaindia.com/" target="_blank"><img
+class="sponsor_logo" src="icons/sponsors/cocacola.png" alt="bad"></a>
+</div>       <div class="col-md-2 col-xs-6 sponsor_outer">         <a
+href="http://www.corpbank.com/" target="_blank"><img class="sponsor_logo"
+src="icons/sponsors/corporationbank2.png" alt="bad"></a>        </div>
+<div class="col-md-2 col-xs-6 sponsor_outer">         <a
+href="https://www.dominos.co.in/" target="_blank"><img class="sponsor_logo"
+src="icons/sponsors/dominos.png" alt="bad"></a>        </div>       <div class
+="col-md-2 col-xs-6 sponsor_outer">         <a
+href="http://www.donear.com/donear2006/" target="_blank"><img
+class="sponsor_logo" src="icons/sponsors/donear.gif" alt="bad"></a>
+</div>       <div class="col-md-2 col-xs-6 sponsor_outer">         <a
+href="http://bites.livefiesta.com/" target="_blank"><img class="sponsor_logo"
+src="icons/sponsors/fiestabites.png" alt="bad"></a>        </div>       <div
+class="col-md-2 col-xs-6 sponsor_outer">         <a
+href="https://www.freecharge.in/" target="_blank"><img class="sponsor_logo"
+src="icons/sponsors/freecharge.png" alt="bad"></a>        </div>       <div
+class="col-md-2 col-xs-6 sponsor_outer">         <a
+href="http://www.freepressjournal.in/" target="_blank"><img
+class="sponsor_logo" src="icons/sponsors/freepress.jpg" alt="bad"></a>
+</div>       <div class="col-md-2 col-xs-6 sponsor_outer">         <a
+href="https://www.gatorade.com/" target="_blank"><img class="sponsor_logo"
+src="icons/sponsors/gatorade.png" alt="bad"></a>        </div>       <div
+class="col-md-2 col-xs-6 sponsor_outer">         <a
+href="http://www.gorb.in/web/index/index" target="_blank"><img
+class="sponsor_logo" src="icons/sponsors/gorb.png" alt="bad"></a>
+</div>       <div class="col-md-2 col-xs-6 sponsor_outer">         <a
+href="http://www.guiddoo.com/about" target="_blank"><img class="sponsor_logo"
+src="icons/sponsors/guiddoo.png" alt="bad"></a>        </div>       <div class
+="col-md-2 col-xs-6 sponsor_outer">         <a
+href="https://www.hdfcbank.com/" target="_blank"><img class="sponsor_logo"
+src="icons/sponsors/hdfcbanklogo.png" alt="bad"></a>        </div>       <div
+class="col-md-2 col-xs-6 sponsor_outer">         <a href="#"
+target="_blank"><img class="sponsor_logo"
+src="icons/sponsors/healthspring.png" alt="bad"></a>        </div>       <div
+class="col-md-2 col-xs-6 sponsor_outer">         <a href="#"
+target="_blank"><img class="sponsor_logo" src="icons/sponsors/hokeypokey.jpg"
+alt="bad"></a>        </div>       <div class="col-md-2 col-xs-6
+sponsor_outer">         <a href="https://www.icicibank.com/"
+target="_blank"><img class="sponsor_logo" src="icons/sponsors/icicibank.png"
+alt="bad"></a>        </div>       <div class="col-md-2 col-xs-6
+sponsor_outer">         <a href="https://www.iciciprulife.com/"
+target="_blank"><img class="sponsor_logo"
+src="icons/sponsors/iciciprudential.png" alt="bad"></a>        </div>
+<div class="col-md-2 col-xs-6 sponsor_outer">         <a
+href="http://www.killerjeans.com/" target="_blank"><img class="sponsor_logo"
+src="icons/sponsors/killer.png" alt="bad"></a>        </div>       <div class
+="col-md-2 col-xs-6 sponsor_outer">         <a href="#" target="_blank"><img
+class="sponsor_logo" src="icons/sponsors/klounge.jpg" alt="bad"></a>
+</div>       <div class="col-md-2 col-xs-6 sponsor_outer">         <a
+href="https://www.kotak.com/en.html" target="_blank"><img class="sponsor_logo"
+src="icons/sponsors/kotak.png" alt="bad"></a>        </div>       <div class
+="col-md-2 col-xs-6 sponsor_outer">         <a
+href="https://www.livefiesta.com/" target="_blank"><img class="sponsor_logo"
+src="icons/sponsors/livefiesta.png" alt="bad"></a>        </div>       <div
+class="col-md-2 col-xs-6 sponsor_outer">         <a
+href="https://www.mcdonaldsindia.com/" target="_blank"><img
+class="sponsor_logo" src="icons/sponsors/macd.png" alt="bad"></a>
+</div>       <div class="col-md-2 col-xs-6 sponsor_outer">         <a
+href="http://www.mapro.com/" target="_blank"><img class="sponsor_logo"
+src="icons/sponsors/mapro.png" alt="bad"></a>       </div>       <div class
+="col-md-2 col-xs-6 sponsor_outer">         <a href="#" target="_blank"><img
+class="sponsor_logo" src="icons/sponsors/mod.png" alt="bad"></a>       </div>
 
       <div class="col-md-2 col-xs-6 sponsor_outer">
         <a href="https://www.nearbuy.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/nearbuy.png" alt="bad"></a>

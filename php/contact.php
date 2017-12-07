@@ -39,7 +39,7 @@ if(get_magic_quotes_gpc()) {
 // Example $address = "joe.doe@yourdomain.com";
 
 //$address = "example@example.net";
-$address = "virajc@live.com";
+$address = "sprint.marketing@spjimr.org";
 
 
 // Configuration option.
@@ -47,7 +47,7 @@ $address = "virajc@live.com";
 
 // Example, $e_subject = '$name . ' has contacted you via Your Website.';
 
-$e_subject = 'Emain from SPRINT 2018 Website Form by ' . $name . '.';
+$e_subject = 'Email from SPRINT 2018 Website Form by ' . $name . '.';
 
 
 // Configuration option.
