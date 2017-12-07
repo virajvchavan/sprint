@@ -414,6 +414,8 @@ html {
 .works{
 	background-color: white;
 	padding-top: 10px;
+	padding-left: 90px;
+	padding-right: 90px;
 }
 .work {
 	-moz-box-shadow: 0 0 0 1px #fff;
@@ -712,7 +714,7 @@ padding:15px 30px 15px 30px;
 
 .sponsor_outer{
 	height: 100px;
-	margin-bottom: 30px;
+	margin-bottom: 40px;
 }
 
 .sponsor_logo{
@@ -852,4 +854,9 @@ body {
 }
 #video{
 	padding-top: 50px;
+}
+
+.sponsor_outer a{
+	pointer-events: none;
+   cursor: default;
 }
