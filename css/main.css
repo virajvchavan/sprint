@@ -127,14 +127,14 @@ ul li {
 	letter-spacing:7px;
 }
 #header.fixed {
-	background-color: rgba(0, 0, 0, 0.0);
+	background-color: #fff;
 }
 #header.fixed a {
 	color: #000;
 }
 #header.fixed .header-content {
 	border-bottom: 0;
-	padding: 25px 0;
+	padding: 15px 0;
 }
 #header.fixed .nav-toggle {
 	top: 18px;
