@@ -356,7 +356,9 @@ html {
 }
 .intro p {
 	font-family: "Merriweather", Arial, sans-serif;
-	color: rgba(255, 255, 255, 0.75);
+	color: rgba(255, 255, 255, 0.9);
+	background-color: rgba(0, 0, 0, 0.3);
+	padding: 30px;
 	font-weight: 400;
 }
 /* ------------------------------------------------------------------------------
@@ -580,7 +582,7 @@ html {
 -------------------------------------------------------------------------------*/
 .conForm {
 	text-align: center;
-	background-color: #f4511e;
+	background-color: rgba(0, 0, 0, 0.6);
 }
 .conForm h5 {
 	font-size: 30px;
