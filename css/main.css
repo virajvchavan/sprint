@@ -88,6 +88,7 @@ ul li {
 }
 .section {
 	padding: 100px 0;
+	background-color: rgba(0, 0, 0, 0.3)
 }
 .no-padding {
 	padding: 0;
@@ -104,6 +105,7 @@ ul li {
 -------------------------------------------------------------------------------*/
 #header {
 	position: fixed;
+	background-color: white;
 	width: 100%;
 	z-index: 999;
 }
@@ -129,7 +131,7 @@ ul li {
 #header.fixed {
 	position: fixed;
 }
-#header.fixed a {
+#header.fixed a{
 	color: #000;
 }
 #header.fixed .header-content {
@@ -375,7 +377,7 @@ html {
 	margin-bottom: 15px;
 	padding-top: 15px;
 	padding-bottom: 15px;
-	background-color: rgb(31, 24, 48);
+	background-color: #0c0913;
 	color: white;
 	margin-left:0px; 
 	border: solid rgba(255, 255, 255, 0.25) 1px; 
@@ -387,7 +389,7 @@ html {
 	transition: transform 0.2s;
 }
   .services:hover{
-    background-color: #0c0913;
+    background-color: rgb(11, 9, 17);
    -webkit-transform: scale(1.05);
     -moz-transform: scale(1.05);
     -ms-transform: scale(1.05);
@@ -710,7 +712,7 @@ padding:15px 30px 15px 30px;
   }
 
 .sponsor_outer{
-	margin-bottom: 5%;
+	margin-bottom: 0.5%;
 	margin-left: 2%;
 	height: 8em;
 	border: solid rgba(255, 255, 255, 0.25) 1px; 
