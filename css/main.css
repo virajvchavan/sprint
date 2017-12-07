@@ -60,6 +60,14 @@ h5 {
 .btn-large {
 	padding: 15px 40px;
 }
+
+.reg_btn{
+	background-color: #f4511e;
+}
+
+.reg_btn:hover{
+	background-color: #000835;
+}
 /* ------------------------------------------------------------------------------
 	Global Styles
 -------------------------------------------------------------------------------*/
@@ -303,7 +311,13 @@ ul li {
 /* ------------------------------------------------------------------------------
 	Banner
 -------------------------------------------------------------------------------*/
-
+html { 
+  background: url(icons/sunset.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
 .banner {
 	background-image: url(../icons/sunset.jpg);
 	background-position: ;
@@ -369,9 +383,20 @@ ul li {
 	color: white;
 	margin-left:0px; 
 	border: solid rgba(255, 255, 255, 0.25) 1px; 
+	-moz-box-shadow: 0 0 0 1px #fff;
+	-webkit-box-shadow: 0 0 0 1px #fff;
+	box-shadow: 0 0 0 1px #fff;
+	overflow: hidden;
+	position: relative;
+	transition: transform 0.2s;
 }
   .services:hover{
-   background-color: rgba(29, 19, 44, 0.8);
+    background-color: #0c0913;
+   -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    z-index: 200;
  } 
 .services-content {
 	padding: 0 15px;
@@ -401,6 +426,9 @@ ul li {
 	width: 100%;
 	height: 200px;
 }
+
+
+
 .work .overlay {
 	height: 100%;
 	left: 0;
@@ -684,6 +712,7 @@ padding:15px 30px 15px 30px;
 
 .sponsor_outer{
 	height: 100px;
+	margin-bottom: 30px;
 }
 
 .sponsor_logo{

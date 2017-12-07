@@ -41,6 +41,11 @@
 }
 #enterBtn{
   padding: 20px;
+  height: 100px;
+  position: relative;
+  top: 500px;
+  left: 46%;
+  cursor: pointer;
 }
 #enterBtn:hover{
   -webkit-transform: scale(1.2); /* Saf3.1+, Chrome */
@@ -48,7 +53,6 @@
       -ms-transform: scale(1.2); /* IE9 */
        -o-transform: scale(1.2); /* Opera 10.5+ */
           transform: scale(1.2);
-          background-color: rgba(0, 0, 0, 0.5)
 }
 
 /* Safari 4.0 - 8.0 */
@@ -117,11 +121,6 @@
 #body{
   display: block;
 }
-#enterBtn{
-  position: relative;
-  top: 500px;
-  left: 50%;
-}
 </style> 
 
 </head>
@@ -131,7 +130,7 @@
         <img id="runner" src="icons/runningMan.png">
         <img id="warrior" src="icons/warrior.png">        
     </div>
-    <div class="arrow bounce" id="enterBtn" onclick="play()">
+    <img src="icons/down_button.png" id="enterBtn" onclick="play()">
       <br>
     </div>
 </section>
@@ -182,7 +181,8 @@
     <div class="col-md-8 col-md-offset-2 text-center">
       <h3>Watch our video</h3>
       <div class="videowrapper">        
-        <iframe width="853" height="480" src="https://www.youtube.com/embed/7M6B9geSxOE" frameborder="0" gesture="media" allowfullscreen></iframe>
+        <!-- <iframe width="853" height="480" src="https://www.youtube.com/embed/7M6B9geSxOE" frameborder="0" gesture="media" allowfullscreen></iframe> -->
+        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FSpjimrSprint%2Fvideos%2F885096898317090%2F&show_text=0&width=560&mute=0" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
     </div>
     </div>
   </div>
@@ -202,7 +202,7 @@
 <!--  intro section  --> 
 <!--  services section  -->
 <section id="events" class="service-section">
-  <h3 style="padding: 10px;">Formal Events</h3>
+  <h3 style="padding: 10px; padding-left: 30px;">Formal Events  &nbsp;&nbsp;&nbsp;<a href="https://docs.google.com/forms/d/e/1FAIpQLSe8Gr0uxwyuwR981pMjAnfbS_8a6ZY2SDNt3wGmeQ0_KULcNw/viewform" class="btn btn-sml btn-priary reg_btn" target="_blank">Register Now!</a></h3>
   <div class="container">
   
     <div class="row">
@@ -231,36 +231,6 @@
             </div>
           </div>
         </div>
-
-
-
-
-      <div class="col-md-3 col-sm-5 services text-center" data-toggle="modal" data-target="#formal-2"> 
-        <span class="icon"><img src="icons/swimming.png" alt=""/></span>
-        <div class="services-content">
-          <h5>Swimming</h5>
-          <b><i class="fa fa-phone" ></i></b>  8004274160 (Abhiman Talwar)
-        </div>
-      </div>
-      <div class="modal fade" id="formal-2" role="dialog">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">×</button>
-                <h4 class="modal-title">Swimming</h4>
-              </div>
-              <div class="modal-body">
-                <img src="images/swimming.jpg" alt="swimming" class="event_image"/>
-                <h3>Prizes:</h3> <ul> <li><b>Winner:-</b> Coming Soon.</li> <li><b>Runner:-</b> Coming Soon </li> </ul> <h3>Contact</h3> <b><i class="fa fa-phone" ></i></b>  8004274160 (Abhiman Talwar)
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
 
       <div class="col-md-3 col-sm-5 services text-center" data-toggle="modal" data-target="#formal-3">
         <span class="icon"><img src="icons/football.png" alt=""/></span>
@@ -565,7 +535,7 @@
 
   </div>
 
-    <h3 style="padding: 10px;">Informal Events</h3>
+    <h3 style="padding: 10px; padding-left: 30px;">Informal Events  &nbsp;&nbsp;&nbsp;<a href="https://docs.google.com/forms/d/e/1FAIpQLSe8Gr0uxwyuwR981pMjAnfbS_8a6ZY2SDNt3wGmeQ0_KULcNw/viewform" class="btn btn-sml btn-priary reg_btn" target="_blank">Register Now!</a></h3>
   <div class="container">
     <div class="row">
       <div class="col-md-3 col-sm-5 services text-center" data-toggle="modal" data-target="#informal-1"> 
@@ -739,43 +709,139 @@
   <div class="container">
     <div class="row">
       <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/cocacola.png" alt="bad"></a> 
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/aircel.png" alt="bad"></a> 
       </div>
       <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/ceat.png" alt="bad"></a> 
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/americanexpress.png" alt="bad"></a> 
       </div>
       <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/idea.png" alt="bad"></a> 
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/axisbank.png" alt="bad"></a> 
       </div>
       <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/american_express.png" alt="bad"></a> 
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/bikaji.png" alt="bad"></a> 
       </div>
       <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/icici.png" alt="bad"></a> 
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/boi.png" alt="bad"></a> 
       </div>
       <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/cocacola.png" alt="bad"></a> 
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/cocacola.png" alt="bad"></a> 
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/box8_.png" alt="bad"></a> 
       </div>
       <div class="col-md-2 col-xs-6 sponsor_outer">
         <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/cocacola.png" alt="bad"></a> 
       </div>
       <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/cocacola.png" alt="bad"></a> 
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/corporationbank2.png" alt="bad"></a> 
       </div>
       <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/cocacola.png" alt="bad"></a> 
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/dominos.png" alt="bad"></a> 
       </div>
       <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/cocacola.png" alt="bad"></a> 
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/donear.gif" alt="bad"></a> 
       </div>
       <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/cocacola.png" alt="bad"></a> 
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/fiestabites.png" alt="bad"></a> 
       </div>
       <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/cocacola.png" alt="bad"></a> 
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/freecharge.png" alt="bad"></a> 
+      </div>
+      <div class="col-md-2 col-xs-6 sponsor_outer">
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/freepress.jpg" alt="bad"></a> 
+      </div>
+      <div class="col-md-2 col-xs-6 sponsor_outer">
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/gatorade.png" alt="bad"></a> 
+      </div>
+      <div class="col-md-2 col-xs-6 sponsor_outer">
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/gorb.png" alt="bad"></a> 
+      </div>
+      <div class="col-md-2 col-xs-6 sponsor_outer">
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/guiddoo.png" alt="bad"></a> 
+      </div>
+      <div class="col-md-2 col-xs-6 sponsor_outer">
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/hdfcbanklogo.png" alt="bad"></a> 
+      </div>
+      <div class="col-md-2 col-xs-6 sponsor_outer">
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/healthspring.png" alt="bad"></a> 
+      </div>
+      <div class="col-md-2 col-xs-6 sponsor_outer">
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/hokeypokey.jpg" alt="bad"></a> 
+      </div>
+      <div class="col-md-2 col-xs-6 sponsor_outer">
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/icicibank.png" alt="bad"></a> 
+      </div>
+      <div class="col-md-2 col-xs-6 sponsor_outer">
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/iciciprudential.png" alt="bad"></a> 
+      </div>
+      <div class="col-md-2 col-xs-6 sponsor_outer">
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/killer.png" alt="bad"></a> 
+      </div>
+      <div class="col-md-2 col-xs-6 sponsor_outer">
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/klounge.jpg" alt="bad"></a> 
+      </div>
+      <div class="col-md-2 col-xs-6 sponsor_outer">
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/kotak.png" alt="bad"></a> 
+      </div>
+      <div class="col-md-2 col-xs-6 sponsor_outer">
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/livefiesta.png" alt="bad"></a> 
+      </div>
+      <div class="col-md-2 col-xs-6 sponsor_outer">
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/macd.png" alt="bad"></a> 
+      </div>
+      <div class="col-md-2 col-xs-6 sponsor_outer">
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/mapro.png" alt="bad"></a>
+      </div>
+      <div class="col-md-2 col-xs-6 sponsor_outer">
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/mod.png" alt="bad"></a>
+      </div>
+      <div class="col-md-2 col-xs-6 sponsor_outer">
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/nearbuy.png" alt="bad"></a>
+      </div>
+      <div class="col-md-2 col-xs-6 sponsor_outer">
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/ola.png" alt="bad"></a>
+      </div>
+      <div class="col-md-2 col-xs-6 sponsor_outer">
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/ongc.png" alt="bad"></a>
+      </div>
+      <div class="col-md-2 col-xs-6 sponsor_outer">
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/pressto.png" alt="bad"></a>
+      </div>
+      <div class="col-md-2 col-xs-6 sponsor_outer">
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/radiocity.png" alt="bad"></a>
+      </div>
+      <div class="col-md-2 col-xs-6 sponsor_outer">
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/raymond.png" alt="bad"></a>
+      </div>
+      <div class="col-md-2 col-xs-6 sponsor_outer">
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/redfm.png" style = "background-color: #c50011;" alt="bad"></a>
+      </div>
+      <div class="col-md-2 col-xs-6 sponsor_outer">
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/sbi.png" alt="bad"></a>
+      </div>
+      <div class="col-md-2 col-xs-6 sponsor_outer">
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/sbimutual.png" alt="bad"></a>
+      </div>
+      <div class="col-md-2 col-xs-6 sponsor_outer">
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/shopclues.png" alt="bad"></a>
+      </div>
+      <div class="col-md-2 col-xs-6 sponsor_outer">
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/spykar.jpg" alt="bad"></a>
+      </div>
+      <div class="col-md-2 col-xs-6 sponsor_outer">
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/starsports.png" alt="bad"></a>
+      </div>
+      <div class="col-md-2 col-xs-6 sponsor_outer">
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/tatamotors.png" alt="bad"></a>
+      </div>
+      <div class="col-md-2 col-xs-6 sponsor_outer">
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/tidyhomz.png" alt="bad"></a>
+      </div>
+      <div class="col-md-2 col-xs-6 sponsor_outer">
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/tsg.jpg" alt="bad"></a>
+      </div>
+      <div class="col-md-2 col-xs-6 sponsor_outer">
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/uti.png" alt="bad"></a>
+      </div>
+      <div class="col-md-2 col-xs-6 sponsor_outer">
+        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/vodafone.png" alt="bad"></a>
       </div>
       
   </div>
