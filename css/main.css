@@ -127,7 +127,7 @@ ul li {
 	letter-spacing:7px;
 }
 #header.fixed {
-	background-color: #fff;
+	background-color: rgba(0, 0, 0, 0.0)
 }
 #header.fixed a {
 	color: #000;
@@ -582,9 +582,11 @@ html {
 /* ------------------------------------------------------------------------------
 	Contact form
 -------------------------------------------------------------------------------*/
+#contact{
+	background-color: rgba(0, 0, 0, 0.3);
+}
 .conForm {
 	text-align: center;
-	background-color: rgba(0, 0, 0, 0.6);
 }
 .conForm h5 {
 	font-size: 30px;
