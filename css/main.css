@@ -359,11 +359,9 @@ html {
 .intro p {
 	font-family: "Merriweather", Arial, sans-serif;
 	color: rgba(255, 255, 255, 0.9);
+	background-color: rgba(0, 0, 0, 0.3);
 	padding: 30px;
 	font-weight: 400;
-}
-.intro{
-	background-color: rgba(0, 0, 0, 0.3);
 }
 /* ------------------------------------------------------------------------------
 	 Serives
@@ -731,13 +729,6 @@ padding:15px 30px 15px 30px;
     left: 0;
     right: 0;
     bottom: 0;
-}
-.sponsor_outer:hover{
-	-webkit-transform: scale(1.05);
-    -moz-transform: scale(1.05);
-    -ms-transform: scale(1.05);
-    -o-transform: scale(1.05);
-    z-index: 200;
 }  
 
 @media (min-width: 641px) {
@@ -871,6 +862,10 @@ body {
 }
 #video{
 	padding-top: 50px;
+}
+.sponsor_outer a{
+	cursor: default;
+	pointer-events: none;
 }
 
 body{
