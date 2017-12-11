@@ -160,15 +160,11 @@
        <img id="warrior" src="icons/warrior.png">
        <span style="color: white; font-size: 16px;"><b>SPJIMR Presents</b></span>
        <br>
-        <img src="icons/sprint.png" id="main_logo" style="margin-left: 10px;"/><br>
+        <img src="icons/sprint.png" id="main_logo"/><br>
         <span style="font-size: 32px; color: white; padding: 10px; font-family:'Samarkan Normal';font-weight:normal;">Iss Ranbhoomi, Khel Jeetega</span><br>
         <span style="color: white; font-size: 20px; font-family: 'Catamaran', sans-serif; padding: 2px;">12th - 14th January, 2018</span><br><br><br>
 
         <a id="mobile_start_btn" class="btn btn-small" href="#video">Start</a>
-        <!--
-        <a href="#" class="btn" style="margin-bottom: 20px;">Register</a>  &nbsp;&nbsp;  
-        <a href="#" class="btn" style="margin-bottom: 20px;">Download Rulebook</a> 
-      -->
       </div>
       <!--  banner text  --> 
     </div>
@@ -191,8 +187,8 @@
 
 <!--  intro section  -->
 <section id="intro" class="section intro">
-  <div class="container" class="intro_section" style="width: 1300px;">
-    <div class="col-md-12 text-center">
+  <div class="container" class="intro_section" style="width: auto;">
+    <div class="col-md-12 text-center" style="padding-left: 0px; padding-right: 0px;">
       <h5>Our Story</h5>
       <p itemprop="description" id="about_us" style="text-align: justify;">SPRINT is the annual sports festival of SPJIMR, Mumbai.
 
@@ -207,19 +203,19 @@ So charge up for the adrenaline-rush experience at the beginning of the new year
 
 <!--  services section  -->
 <section id="events" class="service-section text-center">
-  <h5 style="padding: 10px; margin-left: 295px;">Formal Events 
+  <h5 style="padding: 10px;" id="formalh5">Formal Events 
     <div class="pull-right" style="padding:5px; margin-right: 80px;">
     <table id="downtable">
       <tr>
-      <a><td><img src="icons/download.png" style="cursor: pointer;"></td></a>
+      <td><a href="rulebook.pdf"><img src="icons/download.png" style="cursor: pointer;"></a></td>
       <td><div data-toggle="modal" data-target="#register_modal" style="cursor: pointer;" id="registration_icon"><img src="icons/register.png" alt=""></div></td>
     </tr>
     <tr>
       <td>
-    <a class="btn btn-priary reg_btn" target="_blank">Rulebook</a>
+    <a class="btn btn-priary reg_btn"  href="rulebook.pdf">Rulebook</a>
   </td>
   <td>
-    <a class="btn btn-priary reg_btn" target="_blank">Register</a></td>
+    <a class="btn btn-priary reg_btn" data-toggle="modal" data-target="#register_modal">Register</a></td>
   </tr>
   </table>
     </div>
@@ -237,7 +233,7 @@ So charge up for the adrenaline-rush experience at the beginning of the new year
           </div>
     </div>
 
-  </h5><br><br><br>
+  </h5><br><br><br><br><br>
   <div class="container">
     <div class="row">
       <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-1"> 
@@ -900,7 +896,7 @@ class="sponsor_logo" src="icons/sponsors/mod.png" alt="bad"></a>       </div>
     <div class="container">
       <div class="row">
         <div class="footer-col col-md-6">
-          <h5>Our Location</h5>
+          <h3>Our Location</h3>
           <p itemprop="location" itemscope itemtype="http://schema.org/Place">
             SPJIMR<br>
             Bhavan's Campus<br>
@@ -910,7 +906,7 @@ class="sponsor_logo" src="icons/sponsors/mod.png" alt="bad"></a>       </div>
         </div>
 
         <div class="footer-col col-md-3">
-          <h5>Find us on</h5>
+          <h3>Find us on</h3>
           <ul class="footer-share">
             <li><a href="#"><i class="fa fa-facebook"></i></a></li>
             <li><a href="#"><i class="fa fa-twitter"></i></a></li>

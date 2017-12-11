@@ -741,12 +741,18 @@ padding:15px 30px 15px 30px;
     right: 0;
     bottom: 0;
 }  
-
+#formalh5{
+    	margin-left: auto;
+    }
 @media (min-width: 641px) {
     #mobile_start_btn{
     	display: none;
     }
+    #formalh5{
+    	margin-left: 312px;
+    }
 }
+
 
 @media (max-width: 640px) {
     #runner, #warrior, #index{
@@ -771,6 +777,16 @@ padding:15px 30px 15px 30px;
 	background-size: cover;
 	background-position: top center;
 	min-height: 650px;
+}
+.works{
+	padding-left: 0;
+	padding-right: 0;
+}
+#sponsors .col-xs-6 {
+    width: 48%;
+}
+.sponsor_outer{
+	margin-left: 1%;
 }
 }
 
@@ -874,10 +890,6 @@ body {
 #video{
 	padding-top: 50px;
 }
-.sponsor_outer a{
-	cursor: default;
-	pointer-events: none;
-}
 
 body{
     background-image: url(../icons/sunset.jpg);
@@ -892,3 +904,5 @@ body{
 	padding-left: 5px;
 	padding-right: 5px;
 }
+
+
