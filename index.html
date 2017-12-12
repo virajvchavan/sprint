@@ -1,209 +1,290 @@
-<!DOCTYPE html> <!-- Microdata markup added by Google Structured Data Markup Helper. -->
-<html class="js flexbox flexboxlegacy canvas canvastext no-webgl no-touch geolocation postmessage no-websqldatabase no-indexeddb hashchange history draganddrop no-websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms no-csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang=""><!-- <![endif] --><head> <meta charset="utf-8"/> <meta name="Description" content="SPRINT is a national level sporting fest organised by SPJIMR, Mumbai. SPRINT is in its eleventh year now, having quickly captured the passion of MBA students across India. "/> <meta name="Keywords" content="sprint, spjimr, sports, mumbai, competition, managemant, mba, college fest, event, college event, prize, win"/> <meta name="viewport" content="width=device-width, initial-scale=1"/> <title>SPRINT 2018 | SPJIMR Mumbai</title> <link rel="stylesheet" href="css/bootstrap.min.css"/> <link rel="stylesheet" href="css/flexslider.css"/> <link rel="stylesheet" href="css/jquery.fancybox.css"/> <link rel="stylesheet" href="css/main.css"/> <link rel="stylesheet" href="css/responsive.css"/> <link rel="stylesheet" href="css/font-icon.css"/> <link rel="stylesheet" href="css/animate.min.css"/> <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"/> <link href="https://fonts.googleapis.com/css?family=Anton|Lato|Timmana|Catamaran" rel="stylesheet"/> 
-<link rel="stylesheet" type="text/css"
-          href="style.css"/>
+<!DOCTYPE html>
+<!-- Microdata markup added by Google Structured Data Markup Helper. -->
+<html class="js flexbox flexboxlegacy canvas canvastext no-webgl no-touch geolocation postmessage no-websqldatabase no-indexeddb hashchange history draganddrop no-websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients cssreflections csstransforms no-csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="">
+<!-- <![endif] -->
 
-<style type="text/css" media="screen"> 
-  #about_us{ 
-    font-size: 23px; line-height: 1.2; font-family: Lato; 
-  } 
-  #fixedbutton { 
-    position: fixed; bottom: 0px; right: 0px; padding: 20px; z-index: 10; height: 75px; 
-  }
-  #fixedbutton:hover{
-    cursor: pointer;
-    -webkit-transform: scale(1.2); /* Saf3.1+, Chrome */
-     -moz-transform: scale(1.2); /* FF3.5+ */
-      -ms-transform: scale(1.2); /* IE9 */
-       -o-transform: scale(1.2); /* Opera 10.5+ */
-          transform: scale(1.2);
-  }
-  .event_image{
-   max-width: 100%; height: auto;}
+<head>
+    <meta charset="utf-8" />
+    <meta name="Description" content="SPRINT is a national level sporting fest organised by SPJIMR, Mumbai. SPRINT is in its eleventh year now, having quickly captured the passion of MBA students across India. " />
+    <meta name="Keywords" content="sprint, spjimr, sports, mumbai, competition, managemant, mba, college fest, event, college event, prize, win" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>SPRINT 2018 | SPJIMR Mumbai</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/flexslider.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link rel="stylesheet" href="css/font-icon.css" />
+    <link rel="stylesheet" href="css/animate.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" />
+    <link href="https://fonts.googleapis.com/css?family=Anton|Lato|Timmana|Catamaran" rel="stylesheet" />
+    <link rel="stylesheet" type="text/css" href="style.css" />
 
-#banner_container{
-  margin-left: 0px;
-  margin-right: 0px;
-}
-#runner{
-    position: absolute;
-    height: 240px;
-    bottom: 35px;
-    left: 20px;
+    <style type="text/css" media="screen">
+        #about_us {
+            font-size: 23px;
+            line-height: 1.2;
+            font-family: Lato;
+        }
+        
+        #fixedbutton {
+            position: fixed;
+            bottom: 0px;
+            right: 0px;
+            padding: 20px;
+            z-index: 10;
+            height: 75px;
+        }
+        
+        #fixedbutton:hover {
+            cursor: pointer;
+            -webkit-transform: scale(1.2);
+            /* Saf3.1+, Chrome */
+            -moz-transform: scale(1.2);
+            /* FF3.5+ */
+            -ms-transform: scale(1.2);
+            /* IE9 */
+            -o-transform: scale(1.2);
+            /* Opera 10.5+ */
+            transform: scale(1.2);
+        }
+        
+        .event_image {
+            max-width: 100%;
+            height: auto;
+        }
+        
+        #banner_container {
+            margin-left: 0px;
+            margin-right: 0px;
+        }
+        
+        #runner {
+            position: absolute;
+            height: 240px;
+            bottom: 35px;
+            left: 20px;
+            -webkit-animation-name: runner_animate;
+            /* Safari 4.0 - 8.0 */
+            -webkit-animation-duration: 3s;
+            /* Safari 4.0 - 8.0 */
+            animation-name: runner_animate;
+            animation-duration: 3s;
+            -webkit-animation-play-state: paused;
+            /* Safari 4.0 - 8.0 */
+            animation-play-state: paused;
+            animation-fill-mode: forwards;
+        }
+        
+        #enterBtn {
+            padding: 20px;
+            height: 100px;
+            position: relative;
+            top: 500px;
+            left: 46%;
+            cursor: pointer;
+        }
+        
+        #enterBtn:hover {
+            -webkit-transform: scale(1.2);
+            /* Saf3.1+, Chrome */
+            -moz-transform: scale(1.2);
+            /* FF3.5+ */
+            -ms-transform: scale(1.2);
+            /* IE9 */
+            -o-transform: scale(1.2);
+            /* Opera 10.5+ */
+            transform: scale(1.2);
+        }
+        /* Safari 4.0 - 8.0 */
+        
+        @-webkit-keyframes runner_animate {
+            0% {
+                left: 0px;
+            }
+            100% {
+                left: 48.5%;
+            }
+        }
+        /* Standard syntax */
+        
+        @keyframes runner_animate {
+            0% {
+                left: 0px;
+            }
+            100% {
+                left: 48.5%;
+            }
+        }
+        
+        #index {
+            -webkit-animation-name: animate_index;
+            /* Safari 4.0 - 8.0 */
+            -webkit-animation-duration: 3s;
+            /* Safari 4.0 - 8.0 */
+            animation-name: animate_index;
+            animation-duration: 3s;
+            -webkit-animation-play-state: paused;
+            /* Safari 4.0 - 8.0 */
+            animation-play-state: paused;
+            position: fixed;
+            z-index: 1000;
+            width: 100%;
+        }
+        
+        @keyframes animate_index {
+            0% {
+                bottom: 0%;
+            }
+            100% {
+                bottom: 100%;
+            }
+        }
+        
+        @-webkit-keyframes animate_index {
+            0% {
+                bottom: 0%;
+            }
+            100% {
+                bottom: 100%;
+            }
+        }
+        
+        #warrior {
+            height: 290px;
+            position: absolute;
+            bottom: 35px;
+            right: 20px;
+            -webkit-animation-name: runner_warrior;
+            /* Safari 4.0 - 8.0 */
+            -webkit-animation-duration: 3s;
+            /* Safari 4.0 - 8.0 */
+            animation-name: runner_warrior;
+            animation-duration: 3s;
+            -webkit-animation-play-state: paused;
+            /* Safari 4.0 - 8.0 */
+            animation-play-state: paused;
+            animation-fill-mode: forwards;
+        }
+        /* Safari 4.0 - 8.0 */
+        
+        @-webkit-keyframes runner_warrior {
+            0% {
+                right: 0px;
+            }
+            100% {
+                right: 48%;
+            }
+        }
+        /* Standard syntax */
+        
+        @keyframes runner_warrior {
+            0% {
+                right: 0px;
+            }
+            100% {
+                right: 48%;
+            }
+        }
+        
+        .fancybox-margin {
+            margin-right: 0px;
+        }
+        
+        #body {
+            display: block;
+        }
 
-    -webkit-animation-name: runner_animate; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
-    animation-name: runner_animate;
-    animation-duration: 3s;
-    -webkit-animation-play-state: paused; /* Safari 4.0 - 8.0 */
-    animation-play-state: paused;
-    animation-fill-mode: forwards;
-}
-#enterBtn{
-  padding: 20px;
-  height: 100px;
-  position: relative;
-  top: 500px;
-  left: 46%;
-  cursor: pointer;
-}
-#enterBtn:hover{
-  -webkit-transform: scale(1.2); /* Saf3.1+, Chrome */
-     -moz-transform: scale(1.2); /* FF3.5+ */
-      -ms-transform: scale(1.2); /* IE9 */
-       -o-transform: scale(1.2); /* Opera 10.5+ */
-          transform: scale(1.2);
-}
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes runner_animate {
-    0%   {left:0px; }
-    100%  {left:48.5%;}
-
-}
-
-/* Standard syntax */
-@keyframes runner_animate {
-    0%   {left:0px; }
-    100%  {left:48.5%;}
-}
-
-#index{
-
-      -webkit-animation-name: animate_index; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
-    animation-name: animate_index;
-    animation-duration: 3s;
-    -webkit-animation-play-state: paused; /* Safari 4.0 - 8.0 */
-    animation-play-state: paused;
-    position: fixed;
-    z-index: 1000;
-    width: 100%; 
-}
-
-@keyframes animate_index{
-  0% {bottom: 0%;}
-  100% {bottom: 100%;}
-}
-
-@-webkit-keyframes animate_index {
-  0% {bottom: 0%;}
-  100% {bottom: 100%;}
-}
-
-#warrior{
-    height: 290px;
-    position: absolute;
-    bottom: 35px;
-    right: 20px;
-    -webkit-animation-name: runner_warrior; /* Safari 4.0 - 8.0 */
-    -webkit-animation-duration: 3s; /* Safari 4.0 - 8.0 */
-    animation-name: runner_warrior;
-    animation-duration: 3s;
-    -webkit-animation-play-state: paused; /* Safari 4.0 - 8.0 */
-    animation-play-state: paused;
-    animation-fill-mode: forwards;
-}
-
-/* Safari 4.0 - 8.0 */
-@-webkit-keyframes runner_warrior {
-    0%   {right:0px; }
-    100%  {right:48%;}
-
-}
-
-/* Standard syntax */
-@keyframes runner_warrior {
-    0%   {right:0px; }
-    100%  {right:48%;}
-}
-.fancybox-margin{margin-right:0px;}
-#body{
-  display: block;
-}
-</style> 
+        #map{
+                height: 250px;
+                width: 450px;
+        }
+    </style>
 
 </head>
-<body scroll="no" style="overflow: hidden"> 
-<section class="banner front" role="banner" id="index">
-    <div class="col-12">   
-        <img id="runner" src="icons/runningMan.png">
-        <img id="warrior" src="icons/warrior.png">        
-    </div>
-    <img src="icons/down_button.png" id="enterBtn" onclick="play()">
-      <br>
-    </div>
-</section>
 
-<div id="body">
-<a><img src="icons/up_button.png" id="fixedbutton"/></a> <!-- header section -->
-<span itemscope itemtype="http://schema.org/Event"><section class="banner" role="banner" id="start">
-  <header id="header">
-    <div class="header-content clearfix"> <a class="logo" href="index.html">
-<span itemprop="name">SPRINT 2018</span></a>
-      <nav class="navigation" role="navigation">
-        <ul class="primary-nav">
-          <li><a href="#intro">About</a></li>
-          <li><a href="#events">Events</a></li>
-          <li><a href="#gallery">Gallery</a></li>
-          <li><a href="#sponsors">Sponsors</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-      <a href="#" class="nav-toggle">Menu<span></span></a> </div>
-  </header>
-  <!--  banner text  -->
-  <div class="container" id="banner_container" style="width: 100%">
-    <div class="col-12">
-      <div class="banner-text text-center">
-        <img id="runner" src="icons/runningMan.png">
-       <img id="warrior" src="icons/warrior.png">
-       <span style="color: white; font-size: 16px;"><b>SPJIMR Presents</b></span>
-       <br>
-        <img src="icons/sprint.png" id="main_logo"/><br>
-        <span style="font-size: 32px; color: white; padding: 10px; font-family:'Samarkan Normal';font-weight:normal;">Iss Ranbhoomi, Khel Jeetega</span><br>
-        <span style="color: white; font-size: 20px; font-family: 'Catamaran', sans-serif; padding: 2px;">12th - 14th January, 2018</span><br><br><br>
+<body scroll="no" style="overflow: hidden">
+    <section class="banner front" role="banner" id="index">
+        <div class="col-12">
+            <img id="runner" src="icons/runningMan.png">
+            <img id="warrior" src="icons/warrior.png">
+        </div>
+        <img src="icons/down_button.png" id="enterBtn" onclick="play()">
+        <br>
+    </section>
 
-        <a id="mobile_start_btn" class="btn btn-small" href="#video">Start</a>
-      </div>
-      <!--  banner text  --> 
-    </div>
-  </div>
-</section>
-<!--  header section  --> 
-<!--  video section  -->
-<section id="video" class="section video">
-  <div class="container">
-    <div class="col-md-8 col-md-offset-2 text-center">
-      <h5>Watch our video</h5>
-      <div class="videowrapper">        
-        <!-- <iframe width="853" height="480" src="https://www.youtube.com/embed/7M6B9geSxOE" frameborder="0" gesture="media" allowfullscreen></iframe> -->
-        <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FSpjimrSprint%2Fvideos%2F885096898317090%2F&show_text=0&width=560&mute=0" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
-    </div>
-    </div>
-  </div>
-</section>
-<!--  video section  --> 
+    <div id="body">
+        <a><img src="icons/up_button.png" id="fixedbutton" /></a>
+        <!-- header section -->
+        <span itemscope itemtype="http://schema.org/Event">
+        <section class="banner" role="banner" id="start">
+        <header id="header">
+            <div class="header-content clearfix"> <a class="logo" href="index.html">
+            <span itemprop="name">SPRINT 2018</span></a>
+            <nav class="navigation" role="navigation">
+            <ul class="primary-nav">
+                <li><a href="#intro">About</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+                <li><a href="#sponsors">Sponsors</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            </nav>
+            <a href="#" class="nav-toggle">Menu<span></span></a> </div>
+        </header>
+    <!--  banner text  -->
+        <div class="container" id="banner_container" style="width: 100%">
+            <div class="col-12">
+                <div class="banner-text text-center">
+                    <img id="runner" src="icons/runningMan.png">
+                    <img id="warrior" src="icons/warrior.png">
+                    <span style="color: white; font-size: 16px;"><b>SPJIMR Presents</b></span>
+                    <br>
+                    <img src="icons/sprint.png" id="main_logo" />
+                    <br>
+                    <span style="font-size: 32px; color: white; padding: 10px; font-family:'Samarkan Normal';font-weight:normal;">Iss Ranbhoomi, Khel Jeetega</span>
+                    <br>
+                    <span style="color: white; font-size: 20px; font-family: 'Catamaran', sans-serif; padding: 2px;">12th - 14th January, 2018</span>
+                    <br>
+                    <br>
+                    <br>
 
-<!--  intro section  -->
-<section id="intro" class="section intro">
-  <div class="container" class="intro_section" style="width: auto;">
-    <div class="col-md-12 text-center" style="padding-left: 0px; padding-right: 0px;">
-      <h5>Our Story</h5>
-      <p itemprop="description" id="about_us" style="text-align: justify;">SPRINT is the annual sports festival of SPJIMR, Mumbai.
+                    <a id="mobile_start_btn" class="btn btn-small" href="#video">Start</a>
+                </div>
+                <!--  banner text  -->
+            </div>
+        </div>
+        </section>
+    <!--  header section  -->
+    <!--  video section  -->
+    <section id="video" class="section video">
+        <div class="container">
+            <div class="col-md-8 col-md-offset-2 text-center">
+                <h5>Watch our video</h5>
+                <div class="videowrapper">
+                    <!-- <iframe width="853" height="480" src="https://www.youtube.com/embed/7M6B9geSxOE" frameborder="0" gesture="media" allowfullscreen></iframe> -->
+                    <iframe src="https://www.facebook.com/plugins/video.php?href=https%3A%2F%2Fwww.facebook.com%2FSpjimrSprint%2Fvideos%2F885096898317090%2F&show_text=0&width=560&mute=0" width="560" height="315" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowTransparency="true" allowFullScreen="true"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--  video section  -->
 
-SPRINT 2018 is truly a celebration of courage and heart @SPJIMR! Scheduled on the 12th, 13th and 14th of Jan’18, it is a platform for all the _Sher-Dils_ out there to bring out the Warrior inside, prove their mettle on the battlefield and ultimately emerge as a Conqueror (of kingdoms and hearts)!
+    <!--  intro section  -->
+    <section id="intro" class="section intro">
+        <div class="container" class="intro_section" style="width: auto;">
+            <div class="col-md-12 text-center" style="padding-left: 0px; padding-right: 0px;">
+                <h5>Our Story</h5>
+                <p itemprop="description" id="about_us" style="text-align: justify;">SPRINT is the annual sports festival of SPJIMR, Mumbai. SPRINT 2018 is truly a celebration of courage and heart @SPJIMR! Scheduled on the 12th, 13th and 14th of Jan’18, it is a platform for all the _Sher-Dils_ out there to bring out the Warrior inside, prove their mettle on the battlefield and ultimately emerge as a Conqueror (of kingdoms and hearts)! So charge up for the adrenaline-rush experience at the beginning of the new year 2018!
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--  intro section  -->
 
-So charge up for the adrenaline-rush experience at the beginning of the new year 2018!
-</p>
-    </div>
-  </div>
-</section>
-<!--  intro section  -->
-
-<!--  services section  -->
-<section id="events" class="service-section text-center">
-  <h5 style="padding: 10px;" id="formalh5">Formal Events 
+    <!--  services section  -->
+    <section id="events" class="service-section text-center">
+        <h5 style="padding: 10px;" id="formalh5">Formal Events 
     <div class="pull-right" style="padding:5px; margin-right: 80px;">
     <table id="downtable">
       <tr>
@@ -233,712 +314,821 @@ So charge up for the adrenaline-rush experience at the beginning of the new year
           </div>
     </div>
 
-  </h5><br><br><br><br><br>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-1"> 
-        <span class="icon"><img src="icons/tennis.png" alt="" class="event_logo"/></span>
-        <div class="services-content">
-          <h5>Tennis</h5>
-          <b><i class="fa fa-phone" ></i></b>  9001850454 (Karthik Chibber)
-        </div>
-      </div>
-      <div class="modal fade" id="formal-1" role="dialog">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" datadismiss="modal">×</button>
-                <h4 class="modal-title">Tennis</h4>
-              </div>
-              <div class="modal-body">
-                <img src="images/tennis.jpg" alt="tennis" class="event_image"/>
-                <h5>Prizes:</h5> <ul> <li><b>Winner:-</b> Coming Soon.</li> <li><b>Runner:-</b> Coming Soon </li> </ul> <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b>  9001850454 (Karthik Chibber)
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
-              </div>
+  </h5>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-1">
+                    <span class="icon"><img src="icons/tennis.png" alt="" class="event_logo"/></span>
+                    <div class="services-content">
+                        <h5>Tennis</h5>
+                        <b><i class="fa fa-phone" ></i></b> 9001850454 (Karthik Chibber)
+                    </div>
+                </div>
+                <div class="modal fade" id="formal-1" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" datadismiss="modal">×</button>
+                                <h4 class="modal-title">Tennis</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/tennis.jpg" alt="tennis" class="event_image" />
+                                <h5>Prizes:</h5>
+                                <ul>
+                                    <li><b>Winner:-</b> Coming Soon.</li>
+                                    <li><b>Runner:-</b> Coming Soon </li>
+                                </ul>
+                                <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b> 9001850454 (Karthik Chibber)
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-3">
+                    <span class="icon"><img src="icons/football.png" alt=""/></span>
+                    <div class="services-content">
+                        <h5>Football</h5>
+                        <b><i class="fa fa-phone" ></i></b> 9868820296 (Yash Mathur)
+                    </div>
+                </div>
+                <div class="modal fade" id="formal-3" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" datadismiss="modal">×</button>
+                                <h4 class="modal-title">Football</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/football.jpg" alt="football" class="event_image" />
+                                <h5>Prizes:</h5>
+                                <ul>
+                                    <li><b>Winner:-</b> Coming Soon.</li>
+                                    <li><b>Runner:-</b> Coming Soon </li>
+                                </ul>
+                                <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b> 9868820296 (Yash Mathur)
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-4">
+                    <span class="icon"><img src="icons/cricket.png" alt=""/></span>
+                    <div class="services-content">
+                        <h5>Cricket</h5>
+                        <b><i class="fa fa-phone" ></i></b> 9874461030 (Abhratanu Dutta)
+                    </div>
+                </div>
+                <div class="modal fade" id="formal-4" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" datadismiss="modal">×</button>
+                                <h4 class="modal-title">Cricket</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/cricket.jpg" alt="cricket" class="event_image" />
+                                <h5>Prizes:</h5>
+                                <ul>
+                                    <li><b>Winner:-</b> Coming Soon.</li>
+                                    <li><b>Runner:-</b> Coming Soon </li>
+                                </ul>
+                                <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b> 9874461030 (Abhratanu Dutta)
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-5">
+                    <span class="icon"><img src="icons/volleyball.png" alt=""/></span>
+                    <div class="services-content">
+                        <h5>Volleyball</h5>
+                        <b><i class="fa fa-phone" ></i></b> 9711367610 (Bhawna Sharma)
+                    </div>
+                </div>
+                <div class="modal fade" id="formal-5" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" datadismiss="modal">×</button>
+                                <h4 class="modal-title">Volleyball</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/volleyball.jpg" alt="volleyball" class="event_image" />
+                                <h5>Prizes:</h5>
+                                <ul>
+                                    <li><b>Winner:-</b> Coming Soon.</li>
+                                    <li><b>Runner:-</b> Coming Soon </li>
+                                </ul>
+                                <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b> 9711367610 (Bhawna Sharma)
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-6">
+                    <span class="icon"><img src="icons/badminton.png" alt=""/></span>
+                    <div class="services-content">
+                        <h5>Badminton</h5>
+                        <b><i class="fa fa-phone" ></i></b> 9008836569 (Nitin Samanta)
+                    </div>
+                </div>
+                <div class="modal fade" id="formal-6" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" datadismiss="modal">×</button>
+                                <h4 class="modal-title">Badminton</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/badminton.jpg" alt="badminton" class="event_image" />
+                                <h5>Prizes:</h5>
+                                <ul>
+                                    <li><b>Winner:-</b> Coming Soon.</li>
+                                    <li><b>Runner:-</b> Coming Soon </li>
+                                </ul>
+                                <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b> 9008836569 (Nitin Samanta)
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-7">
+                    <span class="icon"><img src="icons/futsal.png" alt=""/></span>
+                    <div class="services-content">
+                        <h5>Futsal</h5>
+                        <b><i class="fa fa-phone" ></i></b> 9674526424 (Gaurav Patel)
+                    </div>
+                </div>
+                <div class="modal fade" id="formal-7" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" datadismiss="modal">×</button>
+                                <h4 class="modal-title">Futsal</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/futsal.jpg" alt="futsal" class="event_image" />
+                                <h5>Prizes:</h5>
+                                <ul>
+                                    <li><b>Winner:-</b> Coming Soon.</li>
+                                    <li><b>Runner:-</b> Coming Soon </li>
+                                </ul>
+                                <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b> 9674526424 (Gaurav Patel)
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-8">
+                    <span class="icon"><img src="icons/running.png" alt=""/></span>
+                    <div class="services-content">
+                        <h5>Athletics</h5>
+                        <b><i class="fa fa-phone" ></i></b> 8087000820 (Prashant Iyer)
+                    </div>
+                </div>
+                <div class="modal fade" id="formal-8" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" datadismiss="modal">×</button>
+                                <h4 class="modal-title">Athletics</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/athletics.jpg" alt="athletics" class="event_image" />
+                                <h5>Prizes:</h5>
+                                <ul>
+                                    <li><b>Winner:-</b> Coming Soon.</li>
+                                    <li><b>Runner:-</b> Coming Soon </li>
+                                </ul>
+                                <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b> 8087000820 (Prashant Iyer)
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-9">
+                    <span class="icon"><img src="icons/basketball.png" alt=""/></span>
+                    <div class="services-content">
+                        <h5>Basketball</h5>
+                        <b><i class="fa fa-phone" ></i></b> 7200788404 (Himamshu)
+                    </div>
+                </div>
+                <div class="modal fade" id="formal-9" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" datadismiss="modal">×</button>
+                                <h4 class="modal-title">Basketball</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/basketball.jpg" alt="basketball" class="event_image " />
+                                <h5>Prizes:</h5>
+                                <ul>
+                                    <li><b>Winner:-</b> Coming Soon.</li>
+                                    <li><b>Runner:-</b> Coming Soon </li>
+                                </ul>
+                                <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b> 7200788404 (Himamshu)
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-10">
+                    <span class="icon"><img src="icons/carrom.png" alt=""/></span>
+                    <div class="services-content">
+                        <h5>Carrom</h5>
+                        <b><i class="fa fa-phone" ></i></b> 9825179269 (Saurabh Sinha)
+                    </div>
+                </div>
+                <div class="modal fade" id="formal-10" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" datadismiss="modal">×</button>
+                                <h4 class="modal-title">Carrom</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/carrom.jpg" alt="carrom" class="event_image" />
+                                <h5>Prizes:</h5>
+                                <ul>
+                                    <li><b>Winner:-</b> Coming Soon.</li>
+                                    <li><b>Runner:-</b> Coming Soon </li>
+                                </ul>
+                                <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b> 9825179269 (Saurabh Sinha)
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-11">
+                    <span class="icon"><img src="icons/table-tennis.png" alt=""/></span>
+                    <div class="services-content">
+                        <h5>Table Tennis</h5>
+                        <b><i class="fa fa-phone" ></i></b> 7022250565 (Sidhant Malhotra)
+                    </div>
+                </div>
+                <div class="modal fade" id="formal-11" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" datadismiss="modal">×</button>
+                                <h4 class="modal-title">Table Tennis</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/table-tennis.jpg" alt="table-tennis" class="event_image" />
+                                <h5>Prizes:</h5>
+                                <ul>
+                                    <li><b>Winner:-</b> Coming Soon.</li>
+                                    <li><b>Runner:-</b> Coming Soon </li>
+                                </ul>
+                                <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b> 7022250565 (Sidhant Malhotra) </p>
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-12">
+                    <span class="icon"><img src="icons/squash.png" alt=""/></span>
+                    <div class="services-content">
+                        <h5>Squash</h5>
+                        <b><i class="fa fa-phone" ></i></b> 8853022987 (Rajat Jain)
+                    </div>
+                </div>
+                <div class="modal fade" id="formal-12" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" datadismiss="modal">×</button>
+                                <h4 class="modal-title">Squash</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/squash.jpg" alt="squash" class="event_image" />
+                                <h5>Prizes:</h5>
+                                <ul>
+                                    <li><b>Winner:-</b> Coming Soon.</li>
+                                    <li><b>Runner:-</b> Coming Soon </li>
+                                </ul>
+                                <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b> 8853022987 (Rajat Jain)
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-13">
+                    <span class="icon"><img src="icons/crown.png" alt=""/></span>
+                    <div class="services-content">
+                        <h5>Chess</h5>
+                        <b><i class="fa fa-phone" ></i></b> 9662678208 (Pallav Joshi)
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-
-      <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-3">
-        <span class="icon"><img src="icons/football.png" alt=""/></span>
-        <div class="services-content">
-          <h5>Football</h5>
-          <b><i class="fa fa-phone" ></i></b>  9868820296 (Yash Mathur)
-        </div>
-      </div>
-      <div class="modal fade" id="formal-3" role="dialog">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" datadismiss="modal">×</button>
-                <h4 class="modal-title">Football</h4>
-              </div>
-              <div class="modal-body">
-                <img src="images/football.jpg" alt="football" class="event_image"/>
-                <h5>Prizes:</h5> <ul> <li><b>Winner:-</b> Coming Soon.</li> <li><b>Runner:-</b> Coming Soon </li> </ul> <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b>  9868820296 (Yash Mathur)
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
-              </div>
+            <div class="modal fade" id="formal-13" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" datadismiss="modal">×</button>
+                            <h4 class="modal-title">Chess</h4>
+                        </div>
+                        <div class="modal-body">
+                            <img src="images/chess.jpg" alt="chess" class="event_image" />
+                            <h5>Prizes:</h5>
+                            <ul>
+                                <li><b>Winner:-</b> Coming Soon.</li>
+                                <li><b>Runner:-</b> Coming Soon </li>
+                            </ul>
+                            <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b> 9662678208 (Pallav Joshi)
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
+
         </div>
 
+        <h5 style="padding: 10px;">Informal Events </h5>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#informal-1">
+                    <span class="icon"><img src="icons/foosball.png" alt=""/></span>
+                    <div class="services-content">
+                        <h5>Foosball</h5>
+                        <b><i class="fa fa-phone" ></i></b> 8989474084 (Subrat Sharma)
+                    </div>
+                </div>
+                <div class="modal fade" id="informal-1" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" datadismiss="modal">×</button>
+                                <h4 class="modal-title">Foosball</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/foosball.jpg" alt="foosball" class="event_image" />
+                                <h5>Prizes:</h5>
+                                <ul>
+                                    <li><b>Winner:-</b> Coming Soon.</li>
+                                    <li><b>Runner:-</b> Coming Soon </li>
+                                </ul>
+                                <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b> 8989474084 (Subrat Sharma)
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#informal-2">
+                    <span class="icon"><img src="icons/zorbing.png" alt=""/></span>
+                    <div class="services-content">
+                        <h5>Zorbing</h5>
+                        <b><i class="fa fa-phone" ></i></b> 9674527335 (Yash Goenka)
+                    </div>
+                </div>
+                <div class="modal fade" id="informal-2" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" datadismiss="modal">×</button>
+                                <h4 class="modal-title">Zorbing</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/zorbing.jpg" alt="zorbing" class="event_image" />
+                                <h5>Prizes:</h5>
+                                <ul>
+                                    <li><b>Winner:-</b> Coming Soon.</li>
+                                    <li><b>Runner:-</b> Coming Soon </li>
+                                </ul>
+                                <h5>Contact</h5> <b><i class="fa fa-phone"></i></b> 9674527335 (Yash Vardhan Goenka)
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
+                <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#informal-3">
+                    <span class="icon"><img src="icons/paintball.png" alt=""/></span>
+                    <div class="services-content">
+                        <h5>Paintball</h5>
+                        <b><i class="fa fa-phone" ></i></b> 8295800295 (Rahul Gupta)
+                    </div>
+                </div>
+                <div class="modal fade" id="informal-3" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" datadismiss="modal">×</button>
+                                <h4 class="modal-title">Paintball</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/paintball.jpg" alt="paintball" class="event_image" />
+                                <h5>Prizes:</h5>
+                                <ul>
+                                    <li><b>Winner:-</b> Coming Soon.</li>
+                                    <li><b>Runner:-</b> Coming Soon </li>
+                                </ul>
+                                <h5>Contact</h5><b><i class="fa fa-phone"></i></b> 8295800295 (Rahul Gupta)
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
 
-      <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-4"> 
-        <span class="icon"><img src="icons/cricket.png" alt=""/></span>
-        <div class="services-content">
-          <h5>Cricket</h5>
-          <b><i class="fa fa-phone" ></i></b>  9874461030 (Abhratanu Dutta)
-        </div>
-      </div>
-      <div class="modal fade" id="formal-4" role="dialog">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" datadismiss="modal">×</button>
-                <h4 class="modal-title">Cricket</h4>
-              </div>
-              <div class="modal-body">
-                <img src="images/cricket.jpg" alt="cricket" class="event_image"/>
-                <h5>Prizes:</h5> <ul> <li><b>Winner:-</b> Coming Soon.</li> <li><b>Runner:-</b> Coming Soon </li> </ul> <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b>  9874461030 (Abhratanu Dutta)
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
-              </div>
+                <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#informal-4">
+                    <span class="icon"><img src="icons/slip.png" alt=""/></span>
+                    <div class="services-content">
+                        <h5>Slip Soccer</h5>
+                        <b><i class="fa fa-phone" ></i></b> 7093322302 (Ankit Yadav)
+                    </div>
+                </div>
+                <div class="modal fade" id="informal-4" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" datadismiss="modal">×</button>
+                                <h4 class="modal-title">Slip Soccer</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/slip-soccer.jpg" alt="slip-soccer" class="event_image" />
+                                <h5>Prizes:</h5>
+                                <ul>
+                                    <li><b>Winner:-</b> Coming Soon.</li>
+                                    <li><b>Runner:-</b> Coming Soon </li>
+                                </ul>
+                                <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b> 7093322302 (Ankit Yadav)
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
+        <br>
+        <br>
+    </section>
+    <!--  services section  -->
+    <!--  work section  -->
+    <section id="gallery" class="works section no-padding text-center">
+        <h5 style="padding-top: 10px; padding-bottom: 10px;">Gallery</h5>
+        <div class="container-fluid">
+            <div class="row no-gutter">
 
+                <div class="col-lg-3 col-md-6 col-sm-6 work">
+                    <a href="images/img-1.jpg" class="work-box"> <img src="images/img-1.jpg" alt="" />
+                        <div class="overlay">
 
+                        </div>
+                        <!--  overlay  -->
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 work">
+                    <a href="images/img-2.jpg" class="work-box"> <img src="images/img-2.jpg" alt="" />
+                        <div class="overlay">
 
+                        </div>
+                        <!--  overlay  -->
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 work">
+                    <a href="images/img-3.jpg" class="work-box"> <img src="images/img-3.jpg" alt="" />
+                        <div class="overlay">
 
-      <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-5">
-        <span class="icon"><img src="icons/volleyball.png" alt=""/></span>
-        <div class="services-content">
-          <h5>Volleyball</h5>
-          <b><i class="fa fa-phone" ></i></b>  9711367610 (Bhawna Sharma) 
-        </div>
-      </div>
-      <div class="modal fade" id="formal-5" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" datadismiss="modal">×</button>
-              <h4 class="modal-title">Volleyball</h4>
+                        </div>
+                        <!--  overlay  -->
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 work">
+                    <a href="images/img-4.jpg" class="work-box"> <img src="images/img-4.jpg" alt="" />
+                        <div class="overlay">
+
+                        </div>
+                        <!--  overlay  -->
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 work">
+                    <a href="images/img-5.jpg" class="work-box"> <img src="images/img-5.jpg" alt="" />
+                        <div class="overlay">
+
+                        </div>
+                        <!--  overlay  -->
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 work">
+                    <a href="images/img-6.jpg" class="work-box"> <img src="images/img-6.jpg" alt="" />
+                        <div class="overlay">
+
+                        </div>
+                        <!--  overlay  -->
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 work">
+                    <a href="images/img-7.jpg" class="work-box"> <img src="images/img-7.jpg" alt="" />
+                        <div class="overlay">
+
+                        </div>
+                        <!--  overlay  -->
+                    </a>
+                </div>
+                <div class="col-lg-3 col-md-6 col-sm-6 work">
+                    <a href="images/img-8.jpg" class="work-box"> <img src="images/img-8.jpg" alt="" />
+                        <div class="overlay">
+
+                        </div>
+                        <!--  overlay  -->
+                    </a>
+                </div>
+                <br>
             </div>
-            <div class="modal-body">
-              <img src="images/volleyball.jpg" alt="volleyball" class="event_image"/>
-              <h5>Prizes:</h5> <ul> <li><b>Winner:-</b> Coming Soon.</li> <li><b>Runner:-</b> Coming Soon </li> </ul> <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b>  9711367610 (Bhawna Sharma)
+        </div>
+        <br>
+        <br>
+        <br> </section>
+    <!--  sponsors section  -->
+
+    <section id="sponsors" class="service-section text-center">
+        <br>
+        <h5 style="padding: 10px;">Past Sponsors</h5>
+        <br>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="http://www.aircel.com" target="_blank"><img class="sponsor_logo" src="icons/sponsors/aircel.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="https://www.americanexpress.com/in/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/americanexpress.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="https://www.axisbank.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/axisbank.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="http://www.bikaji.in" target="_blank"><img class="sponsor_logo" src="icons/sponsors/bikaji.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="http://www.bankofindia.co.in/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/boi.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/box8_.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="https://www.coca-colaindia.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/cocacola.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="http://www.corpbank.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/corporationbank2.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="https://www.dominos.co.in/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/dominos.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="http://www.donear.com/donear2006/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/donear.gif" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="http://bites.livefiesta.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/fiestabites.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="https://www.freecharge.in/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/freecharge.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="http://www.freepressjournal.in/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/freepress.jpg" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="https://www.gatorade.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/gatorade.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="http://www.gorb.in/web/index/index" target="_blank"><img class="sponsor_logo" src="icons/sponsors/gorb.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="http://www.guiddoo.com/about" target="_blank"><img class="sponsor_logo" src="icons/sponsors/guiddoo.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="https://www.hdfcbank.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/hdfcbanklogo.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/healthspring.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/hokeypokey.jpg" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="https://www.icicibank.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/icicibank.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="https://www.iciciprulife.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/iciciprudential.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="http://www.killerjeans.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/killer.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/klounge.jpg" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="https://www.kotak.com/en.html" target="_blank"><img class="sponsor_logo" src="icons/sponsors/kotak.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="https://www.livefiesta.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/livefiesta.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="https://www.mcdonaldsindia.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/macd.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="http://www.mapro.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/mapro.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/mod.png" alt="bad"></a>
+                </div>
+
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="https://www.nearbuy.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/nearbuy.png" alt="bad"></a>
+                </div>
+
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="https://www.olacabs.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/ola.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="http://www.ongcindia.com" target="_blank"><img class="sponsor_logo" src="icons/sponsors/ongc.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/pressto.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="http://www.radiocity.in/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/radiocity.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="http://www.raymond.in/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/raymond.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="https://www.redfmindia.in/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/redfm.png" style="background-color: #c50011;" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="https://www.sbi.co.in/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/sbi.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="https://www.sbimf.com/en-us" target="_blank"><img class="sponsor_logo" src="icons/sponsors/sbimutual.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="http://www.shopclues.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/shopclues.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="http://www.spykar.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/spykar.jpg" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="http://www.startv.com/about-us/sports/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/starsports.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="http://www.tatamotors.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/tatamotors.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="https://tidyhomz.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/tidyhomz.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/tsg.jpg" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/uti.png" alt="bad"></a>
+                </div>
+                <div class="col-md-2 col-xs-6 sponsor_outer">
+                    <a href="https://www.vodafone.in/home-mumbai" target="_blank"><img class="sponsor_logo" src="icons/sponsors/vodafone.png" alt="bad"></a>
+                </div>
+
             </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+    </section>
+
+    <!--  contact section  -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2 conForm">
+                    <h5>Shoot An Email</h5>
+                    <p>We are happy to talk to you about any questions you have.</p>
+                    <div id="message"></div>
+                    <form method="post" action="php/contact.php" name="cform" id="cform">
+                        <input name="name" id="name" type="text" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Your name..." />
+                        <input name="email" id="email" type="email" class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarr" placeholder="Email Address..." />
+                        <textarea name="comments" id="comments" cols="" rows="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Message..."></textarea>
+                        <input type="submit" id="submit" name="send" class="submitBnt" value="Send your query" />
+                        <div id="simple-msg"></div>
+                    </form>
+                </div>
             </div>
-          </div>
         </div>
-      </div>
+    </section>
+    <!--  contact section  -->
 
+    <!--  Footer section  -->
+    <footer class="footer">
+        <div class="footer-top section">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col col-md-3">
+                        <h3>Our Location</h3>
+                        <p itemprop="location" itemscope itemtype="http://schema.org/Place">
+                            SPJIMR
+                            <br> Bhavan's Campus
+                            <br> Munshi Nagar | Dadabhai Road
+                            <br> Andheri West | Mumbai, 400 058, India
+                            <br> Tel: +91-22-2623-0396/2401</p>
+                    </div>
 
-      <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-6">
-        <span class="icon"><img src="icons/badminton.png" alt=""/></span>
-        <div class="services-content">
-          <h5>Badminton</h5>
-          <b><i class="fa fa-phone" ></i></b>  9008836569 (Nitin Samanta)
-        </div>
-      </div>
-      <div class="modal fade" id="formal-6" role="dialog">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" datadismiss="modal">×</button>
-                <h4 class="modal-title">Badminton</h4>
-              </div>
-              <div class="modal-body">
-                <img src="images/badminton.jpg" alt="badminton" class="event_image"/>
-                <h5>Prizes:</h5> <ul> <li><b>Winner:-</b> Coming Soon.</li> <li><b>Runner:-</b> Coming Soon </li> </ul> <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b>  9008836569 (Nitin Samanta)
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
-              </div>
+                    
+                    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3769.609538195263!2d72.835368!3d19.124778!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb21f38cb0efce957!2sS.+P.+Jain+Business+School+in+Mumbai%2C+India!5e0!3m2!1sen!2sus!4v1513053179722" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+                    <div class="footer-col col-md-3">
+                        <h3>Find us on</h3>
+                        <ul class="footer-share">
+                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
-
-
-
-      <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-7">
-        <span class="icon"><img src="icons/futsal.png" alt=""/></span>
-        <div class="services-content">
-          <h5>Futsal</h5>
-          <b><i class="fa fa-phone" ></i></b>  9674526424 (Gaurav Patel)
-        </div>
-      </div>
-      <div class="modal fade" id="formal-7" role="dialog">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" datadismiss="modal">×</button>
-                <h4 class="modal-title">Futsal</h4>
-              </div>
-              <div class="modal-body">
-                <img src="images/futsal.jpg" alt="futsal" class="event_image"/>
-                <h5>Prizes:</h5> <ul> <li><b>Winner:-</b> Coming Soon.</li> <li><b>Runner:-</b> Coming Soon </li> </ul> <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b>  9674526424 (Gaurav Patel)
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-      <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-8">
-        <span class="icon"><img src="icons/running.png" alt=""/></span>
-        <div class="services-content">
-          <h5>Athletics</h5>
-          <b><i class="fa fa-phone" ></i></b> 8087000820 (Prashant Iyer) 
-        </div>
-      </div>
-      <div class="modal fade" id="formal-8" role="dialog">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" datadismiss="modal">×</button>
-                <h4 class="modal-title">Athletics</h4>
-              </div>
-              <div class="modal-body">
-                <img src="images/athletics.jpg" alt="athletics" class="event_image"/>
-                <h5>Prizes:</h5> <ul> <li><b>Winner:-</b> Coming Soon.</li> <li><b>Runner:-</b> Coming Soon </li> </ul> <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b>  8087000820 (Prashant Iyer)
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-
-      <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-9">
-        <span class="icon"><img src="icons/basketball.png" alt=""/></span>
-        <div class="services-content">
-          <h5>Basketball</h5>
-          <b><i class="fa fa-phone" ></i></b>  7200788404 (Himamshu)
-        </div>
-      </div>
-      <div class="modal fade" id="formal-9" role="dialog">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" datadismiss="modal">×</button>
-                <h4 class="modal-title">Basketball</h4>
-              </div>
-              <div class="modal-body">
-                <img src="images/basketball.jpg" alt="basketball" class="event_image "/>
-                <h5>Prizes:</h5> <ul> <li><b>Winner:-</b> Coming Soon.</li> <li><b>Runner:-</b> Coming Soon </li> </ul> <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b>   7200788404 (Himamshu)
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-
-      <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-10">
-        <span class="icon"><img src="icons/carrom.png" alt=""/></span>
-        <div class="services-content">
-          <h5>Carrom</h5>
-          <b><i class="fa fa-phone" ></i></b> 9825179269 (Saurabh Sinha)
-        </div>
-      </div>
-      <div class="modal fade" id="formal-10" role="dialog">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" datadismiss="modal">×</button>
-                <h4 class="modal-title">Carrom</h4>
-              </div>
-              <div class="modal-body">
-                <img src="images/carrom.jpg" alt="carrom" class="event_image"/>
-                <h5>Prizes:</h5> <ul> <li><b>Winner:-</b> Coming Soon.</li> <li><b>Runner:-</b> Coming Soon </li> </ul> <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b>  9825179269 (Saurabh Sinha)
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-
-      <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-11">
-        <span class="icon"><img src="icons/table-tennis.png" alt=""/></span>
-        <div class="services-content">
-          <h5>Table Tennis</h5>
-          <b><i class="fa fa-phone" ></i></b> 7022250565 (Sidhant Malhotra) 
-        </div>
-      </div>
-      <div class="modal fade" id="formal-11" role="dialog">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" datadismiss="modal">×</button>
-                <h4 class="modal-title">Table Tennis</h4>
-              </div>
-              <div class="modal-body">
-                <img src="images/table-tennis.jpg" alt="table-tennis" class="event_image"/>
-                <h5>Prizes:</h5> <ul> <li><b>Winner:-</b> Coming Soon.</li> <li><b>Runner:-</b> Coming Soon </li> </ul> <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b>  7022250565 (Sidhant Malhotra) </p>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-      <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-12">
-        <span class="icon"><img src="icons/squash.png" alt=""/></span>
-        <div class="services-content">
-          <h5>Squash</h5>
-          <b><i class="fa fa-phone" ></i></b> 8853022987 (Rajat Jain) 
-        </div>
-      </div>
-      <div class="modal fade" id="formal-12" role="dialog">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" datadismiss="modal">×</button>
-                <h4 class="modal-title">Squash</h4>
-              </div>
-              <div class="modal-body">
-                <img src="images/squash.jpg" alt="squash" class="event_image"/>
-                <h5>Prizes:</h5> <ul> <li><b>Winner:-</b> Coming Soon.</li> <li><b>Runner:-</b> Coming Soon </li> </ul> <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b>  8853022987 (Rajat Jain)
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
-        </div>
-
-
-
-      <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-13">
-        <span class="icon"><img src="icons/crown.png" alt=""/></span>
-        <div class="services-content">
-          <h5>Chess</h5>
-          <b><i class="fa fa-phone" ></i></b>  9662678208 (Pallav Joshi) 
-        </div>
-      </div>
+        <!--  footer top  -->
+    </footer>
+    </span>
     </div>
-    <div class="modal fade" id="formal-13" role="dialog">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class="modal-header">
-            <button type="button" class="close" datadismiss="modal">×</button>
-            <h4 class="modal-title">Chess</h4>
-          </div>
-          <div class="modal-body">
-            <img src="images/chess.jpg" alt="chess" class="event_image"/>
-            <h5>Prizes:</h5> <ul> <li><b>Winner:-</b> Coming Soon.</li> <li><b>Runner:-</b> Coming Soon </li> </ul> <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b>   9662678208 (Pallav Joshi)
-          </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
-          </div>
-        </div>
-      </div>
-    </div>
+    <!-- Footer section -->
+    <!-- JS FILES -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/jquery.flexslider-min.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/retina.min.js"></script>
+    <script src="js/modernizr.js"></script>
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="js/jquery.contact.js"></script>
+    <!-- Start of StatCounter Code for Default Guide -->
+    <script type="text/javascript"></script>
+    <script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script>
+    <!-- End of StatCounter Code for Default Guide <a href="http://statcounter.com/p11545515/?guest=1">View My Stats</a> -->
 
+    <script type="text/javascript">
+        function play() {
+            $('body').css('overflow', 'auto');
+            $('body').css('scroll', 'yes');
+            console.log('asdsa');
+            $("#play").css('display', 'none');
+            $("#runner").css('animation-play-state', 'running');
+            $("#warrior").css('animation-play-state', 'running');
+            setTimeout(function() {
+                $("#index").css('animation-play-state', 'running');
 
-  </div>
+                setTimeout(function() {
+                    $('#index').remove();
 
-    <h5 style="padding: 10px;">Informal Events </h5>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#informal-1"> 
-        <span class="icon"><img src="icons/foosball.png" alt=""/></span>
-        <div class="services-content">
-          <h5>Foosball</h5>
-          <b><i class="fa fa-phone" ></i></b>  8989474084 (Subrat Sharma)
-        </div>
-      </div>
-      <div class="modal fade" id="informal-1" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" datadismiss="modal">×</button>
-              <h4 class="modal-title">Foosball</h4>
-            </div>
-            <div class="modal-body">
-              <img src="images/foosball.jpg" alt="foosball" class="event_image"/>
-              <h5>Prizes:</h5> <ul> <li><b>Winner:-</b> Coming Soon.</li> <li><b>Runner:-</b> Coming Soon </li> </ul> <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b>   8989474084 (Subrat Sharma)
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
+                }, 2000);
 
+            }, 2000);
 
+            $("#enterBtn").css('display', 'none');
+        }
+    </script>
+</body>
 
-      <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#informal-2"> 
-        <span class="icon"><img src="icons/zorbing.png" alt=""/></span>
-        <div class="services-content">
-          <h5>Zorbing</h5>
-          <b><i class="fa fa-phone" ></i></b>  9674527335 (Yash Goenka) 
-        </div>
-      </div>
-      <div class="modal fade" id="informal-2" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" datadismiss="modal">×</button>
-              <h4 class="modal-title">Zorbing</h4>
-            </div>
-            <div class="modal-body">
-              <img src="images/zorbing.jpg" alt="zorbing" class="event_image"/>
-              <h5>Prizes:</h5> <ul> <li><b>Winner:-</b> Coming Soon.</li> <li><b>Runner:-</b> Coming Soon </li> </ul> 
-              <h5>Contact</h5> <b><i class="fa fa-phone"></i></b>  9674527335 (Yash Vardhan Goenka)
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-      <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#informal-3"> 
-        <span class="icon"><img src="icons/paintball.png" alt=""/></span>
-        <div class="services-content">
-          <h5>Paintball</h5>
-          <b><i class="fa fa-phone" ></i></b> 8295800295 (Rahul Gupta)  
-        </div>
-      </div>
-      <div class="modal fade" id="informal-3" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" datadismiss="modal">×</button>
-              <h4 class="modal-title">Paintball</h4>
-            </div>
-            <div class="modal-body">
-              <img src="images/paintball.jpg" alt="paintball" class="event_image"/>
-              <h5>Prizes:</h5> <ul> <li><b>Winner:-</b> Coming Soon.</li> <li><b>Runner:-</b> Coming Soon </li> </ul> <h5>Contact</h5><b><i class="fa fa-phone"></i></b>  8295800295 (Rahul Gupta)
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#informal-4"> 
-        <span class="icon"><img src="icons/slip.png" alt=""/></span>
-        <div class="services-content">
-          <h5>Slip Soccer</h5>
-          <b><i class="fa fa-phone" ></i></b> 7093322302 (Ankit Yadav) 
-        </div>
-      </div>
-      <div class="modal fade" id="informal-4" role="dialog">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <button type="button" class="close" datadismiss="modal">×</button>
-              <h4 class="modal-title">Slip Soccer</h4>
-            </div>
-            <div class="modal-body">
-              <img src="images/slip-soccer.jpg" alt="slip-soccer" class="event_image"/>
-              <h5>Prizes:</h5> <ul> <li><b>Winner:-</b> Coming Soon.</li> <li><b>Runner:-</b> Coming Soon </li> </ul> <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b>   7093322302 (Ankit Yadav)
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-  <br><br>
-</section>
-<!--  services section  --> 
-<!--  work section  -->
-<section id="gallery" class="works section no-padding text-center">
-  <h5 style="padding-top: 10px; padding-bottom: 10px;">Gallery</h5>
-  <div class="container-fluid">
-    <div class="row no-gutter">
-
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/img-1.jpg" class="work-box"> <img src="images/img-1.jpg" alt=""/>
-        <div class="overlay">
-
-        </div>
-        <!--  overlay  --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/img-2.jpg" class="work-box"> <img src="images/img-2.jpg" alt=""/>
-        <div class="overlay">
-          
-        </div>
-        <!--  overlay  --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/img-3.jpg" class="work-box"> <img src="images/img-3.jpg" alt=""/>
-        <div class="overlay">
-          
-        </div>
-        <!--  overlay  --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/img-4.jpg" class="work-box"> <img src="images/img-4.jpg" alt=""/>
-        <div class="overlay">
-          
-        </div>
-        <!--  overlay  --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/img-5.jpg" class="work-box"> <img src="images/img-5.jpg" alt=""/>
-        <div class="overlay">
-          
-        </div>
-        <!--  overlay  --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/img-6.jpg" class="work-box"> <img src="images/img-6.jpg" alt=""/>
-        <div class="overlay">
-          
-        </div>
-        <!--  overlay  --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/img-7.jpg" class="work-box"> <img src="images/img-7.jpg" alt=""/>
-        <div class="overlay">
-          
-        </div>
-        <!--  overlay  --> 
-        </a> </div>
-      <div class="col-lg-3 col-md-6 col-sm-6 work"> <a href="images/img-8.jpg" class="work-box"> <img src="images/img-8.jpg" alt=""/>
-        <div class="overlay">
-          
-        </div>         <!--  overlay  -->          </a> </div>         <br>
-</div>   </div>   <br><br><br> </section> <!--  sponsors section  --> <section
-id="sponsors" class="service-section text-center">   <br>   <h5
-style="padding: 10px;">Past Sponsors</h5><br>   <div class="container">
-<div class="row">       <div class="col-md-2 col-xs-6 sponsor_outer">
-<a href="http://www.aircel.com" target="_blank"><img class="sponsor_logo"
-src="icons/sponsors/aircel.png" alt="bad"></a>        </div>       <div class
-="col-md-2 col-xs-6 sponsor_outer">         <a
-href="https://www.americanexpress.com/in/" target="_blank"><img
-class="sponsor_logo" src="icons/sponsors/americanexpress.png" alt="bad"></a>
-</div>       <div class="col-md-2 col-xs-6 sponsor_outer">         <a
-href="https://www.axisbank.com/" target="_blank"><img class="sponsor_logo"
-src="icons/sponsors/axisbank.png" alt="bad"></a>        </div>       <div
-class="col-md-2 col-xs-6 sponsor_outer">         <a
-href="http://www.bikaji.in" target="_blank"><img class="sponsor_logo"
-src="icons/sponsors/bikaji.png" alt="bad"></a>        </div>       <div class
-="col-md-2 col-xs-6 sponsor_outer">         <a
-href="http://www.bankofindia.co.in/" target="_blank"><img class="sponsor_logo"
-src="icons/sponsors/boi.png" alt="bad"></a>        </div>       <div class
-="col-md-2 col-xs-6 sponsor_outer">         <a href="#" target="_blank"><img
-class="sponsor_logo" src="icons/sponsors/box8_.png" alt="bad"></a>
-</div>       <div class="col-md-2 col-xs-6 sponsor_outer">         <a
-href="https://www.coca-colaindia.com/" target="_blank"><img
-class="sponsor_logo" src="icons/sponsors/cocacola.png" alt="bad"></a>
-</div>       <div class="col-md-2 col-xs-6 sponsor_outer">         <a
-href="http://www.corpbank.com/" target="_blank"><img class="sponsor_logo"
-src="icons/sponsors/corporationbank2.png" alt="bad"></a>        </div>
-<div class="col-md-2 col-xs-6 sponsor_outer">         <a
-href="https://www.dominos.co.in/" target="_blank"><img class="sponsor_logo"
-src="icons/sponsors/dominos.png" alt="bad"></a>        </div>       <div class
-="col-md-2 col-xs-6 sponsor_outer">         <a
-href="http://www.donear.com/donear2006/" target="_blank"><img
-class="sponsor_logo" src="icons/sponsors/donear.gif" alt="bad"></a>
-</div>       <div class="col-md-2 col-xs-6 sponsor_outer">         <a
-href="http://bites.livefiesta.com/" target="_blank"><img class="sponsor_logo"
-src="icons/sponsors/fiestabites.png" alt="bad"></a>        </div>       <div
-class="col-md-2 col-xs-6 sponsor_outer">         <a
-href="https://www.freecharge.in/" target="_blank"><img class="sponsor_logo"
-src="icons/sponsors/freecharge.png" alt="bad"></a>        </div>       <div
-class="col-md-2 col-xs-6 sponsor_outer">         <a
-href="http://www.freepressjournal.in/" target="_blank"><img
-class="sponsor_logo" src="icons/sponsors/freepress.jpg" alt="bad"></a>
-</div>       <div class="col-md-2 col-xs-6 sponsor_outer">         <a
-href="https://www.gatorade.com/" target="_blank"><img class="sponsor_logo"
-src="icons/sponsors/gatorade.png" alt="bad"></a>        </div>       <div
-class="col-md-2 col-xs-6 sponsor_outer">         <a
-href="http://www.gorb.in/web/index/index" target="_blank"><img
-class="sponsor_logo" src="icons/sponsors/gorb.png" alt="bad"></a>
-</div>       <div class="col-md-2 col-xs-6 sponsor_outer">         <a
-href="http://www.guiddoo.com/about" target="_blank"><img class="sponsor_logo"
-src="icons/sponsors/guiddoo.png" alt="bad"></a>        </div>       <div class
-="col-md-2 col-xs-6 sponsor_outer">         <a
-href="https://www.hdfcbank.com/" target="_blank"><img class="sponsor_logo"
-src="icons/sponsors/hdfcbanklogo.png" alt="bad"></a>        </div>       <div
-class="col-md-2 col-xs-6 sponsor_outer">         <a href="#"
-target="_blank"><img class="sponsor_logo"
-src="icons/sponsors/healthspring.png" alt="bad"></a>        </div>       <div
-class="col-md-2 col-xs-6 sponsor_outer">         <a href="#"
-target="_blank"><img class="sponsor_logo" src="icons/sponsors/hokeypokey.jpg"
-alt="bad"></a>        </div>       <div class="col-md-2 col-xs-6
-sponsor_outer">         <a href="https://www.icicibank.com/"
-target="_blank"><img class="sponsor_logo" src="icons/sponsors/icicibank.png"
-alt="bad"></a>        </div>       <div class="col-md-2 col-xs-6
-sponsor_outer">         <a href="https://www.iciciprulife.com/"
-target="_blank"><img class="sponsor_logo"
-src="icons/sponsors/iciciprudential.png" alt="bad"></a>        </div>
-<div class="col-md-2 col-xs-6 sponsor_outer">         <a
-href="http://www.killerjeans.com/" target="_blank"><img class="sponsor_logo"
-src="icons/sponsors/killer.png" alt="bad"></a>        </div>       <div class
-="col-md-2 col-xs-6 sponsor_outer">         <a href="#" target="_blank"><img
-class="sponsor_logo" src="icons/sponsors/klounge.jpg" alt="bad"></a>
-</div>       <div class="col-md-2 col-xs-6 sponsor_outer">         <a
-href="https://www.kotak.com/en.html" target="_blank"><img class="sponsor_logo"
-src="icons/sponsors/kotak.png" alt="bad"></a>        </div>       <div class
-="col-md-2 col-xs-6 sponsor_outer">         <a
-href="https://www.livefiesta.com/" target="_blank"><img class="sponsor_logo"
-src="icons/sponsors/livefiesta.png" alt="bad"></a>        </div>       <div
-class="col-md-2 col-xs-6 sponsor_outer">         <a
-href="https://www.mcdonaldsindia.com/" target="_blank"><img
-class="sponsor_logo" src="icons/sponsors/macd.png" alt="bad"></a>
-</div>       <div class="col-md-2 col-xs-6 sponsor_outer">         <a
-href="http://www.mapro.com/" target="_blank"><img class="sponsor_logo"
-src="icons/sponsors/mapro.png" alt="bad"></a>       </div>       <div class
-="col-md-2 col-xs-6 sponsor_outer">         <a href="#" target="_blank"><img
-class="sponsor_logo" src="icons/sponsors/mod.png" alt="bad"></a>       </div>
-
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="https://www.nearbuy.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/nearbuy.png" alt="bad"></a>
-      </div>
-      
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="https://www.olacabs.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/ola.png" alt="bad"></a>
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="http://www.ongcindia.com" target="_blank"><img class="sponsor_logo" src="icons/sponsors/ongc.png" alt="bad"></a>
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/pressto.png" alt="bad"></a>
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="http://www.radiocity.in/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/radiocity.png" alt="bad"></a>
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="http://www.raymond.in/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/raymond.png" alt="bad"></a>
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="https://www.redfmindia.in/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/redfm.png" style = "background-color: #c50011;" alt="bad"></a>
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="https://www.sbi.co.in/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/sbi.png" alt="bad"></a>
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="https://www.sbimf.com/en-us" target="_blank"><img class="sponsor_logo" src="icons/sponsors/sbimutual.png" alt="bad"></a>
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="http://www.shopclues.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/shopclues.png" alt="bad"></a>
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="http://www.spykar.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/spykar.jpg" alt="bad"></a>
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="http://www.startv.com/about-us/sports/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/starsports.png" alt="bad"></a>
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="http://www.tatamotors.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/tatamotors.png" alt="bad"></a>
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="https://tidyhomz.com/" target="_blank"><img class="sponsor_logo" src="icons/sponsors/tidyhomz.png" alt="bad"></a>
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/tsg.jpg" alt="bad"></a>
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="#" target="_blank"><img class="sponsor_logo" src="icons/sponsors/uti.png" alt="bad"></a>
-      </div>
-      <div class="col-md-2 col-xs-6 sponsor_outer">
-        <a href="https://www.vodafone.in/home-mumbai" target="_blank"><img class="sponsor_logo" src="icons/sponsors/vodafone.png" alt="bad"></a>
-      </div>
-      
-  </div>
-</section>
-
-
-<!--  contact section  -->
-<section id="contact" class="section">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-8 col-md-offset-2 conForm">
-        <h5>Shoot An Email</h5>
-        <p>We are happy to talk to you about any questions you have.</p>
-        <div id="message"></div>
-        <form method="post" action="php/contact.php" name="cform" id="cform">
-          <input name="name" id="name" type="text" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Your name..."/>
-          <input name="email" id="email" type="email" class=" col-xs-12 col-sm-12 col-md-12 col-lg-12 noMarr" placeholder="Email Address..."/>
-          <textarea name="comments" id="comments" cols="" rows="" class="col-xs-12 col-sm-12 col-md-12 col-lg-12" placeholder="Message..."></textarea>
-          <input type="submit" id="submit" name="send" class="submitBnt" value="Send your query"/>
-          <div id="simple-msg"></div>
-        </form>
-      </div>
-    </div>
-  </div>
-</section>
-<!--  contact section  --> 
-
-<!--  Footer section  -->
-<footer class="footer">
-  <div class="footer-top section">
-    <div class="container">
-      <div class="row">
-        <div class="footer-col col-md-6">
-          <h3>Our Location</h3>
-          <p itemprop="location" itemscope itemtype="http://schema.org/Place">
-            SPJIMR<br>
-            Bhavan's Campus<br>
-            Munshi Nagar | Dadabhai Road <br>
-            Andheri West | Mumbai, 400 058, India<br>
-            Tel: +91-22-2623-0396/2401</p>
-        </div>
-
-        <div class="footer-col col-md-3">
-          <h3>Find us on</h3>
-          <ul class="footer-share">
-            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-            <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
-            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </div>
-  <!--  footer top  --> </footer></span> </div>
-<!-- Footer section --> <!-- JS FILES --> <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> <script src="js/bootstrap.min.js"></script> <script src="js/jquery.flexslider-min.js"></script> <script src="js/jquery.fancybox.pack.js"></script> <script src="js/retina.min.js"></script> <script src="js/modernizr.js"></script> <script src="js/main.js"></script> <script type="text/javascript" src="js/jquery.contact.js"></script> <!-- Start of StatCounter Code for Default Guide --> <script type="text/javascript"></script><script type="text/javascript" src="http://www.statcounter.com/counter/counter.js"></script> <!-- End of StatCounter Code for Default Guide <a href="http://statcounter.com/p11545515/?guest=1">View My Stats</a> -->
-
-<script type="text/javascript"> 
-function play(){
-        $('body').css('overflow','auto');
-      $('body').css('scroll','yes');
-  console.log('asdsa');
-  $("#play").css('display','none');
-  $("#runner").css('animation-play-state','running');
-  $("#warrior").css('animation-play-state','running');
-  setTimeout(function(){
-    $("#index").css('animation-play-state','running');
-
-     setTimeout(function(){
-      $('#index').remove();
-
-   },2000);
-
-  },2000);
-
-  $("#enterBtn").css('display', 'none');
-} 
-</script>
- </body></html>
+</html>
