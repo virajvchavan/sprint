@@ -138,10 +138,10 @@ ul li {
 }
 #header.fixed {
 	position: fixed;
-	background-color: white;
+	background:none;
 }
 #header.fixed a{
-	color: #000;
+	color: #fff;
 }
 #header.fixed .header-content {
 	border-bottom: 0;
