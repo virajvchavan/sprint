@@ -204,7 +204,7 @@
 
         #map{
                 height: 250px;
-                width: auto;
+                width: 290px;
                 padding-left: 15px;
         }
     </style>
@@ -225,10 +225,10 @@
         <!-- header section -->
         <span itemscope itemtype="http://schema.org/Event">
         <section class="banner example-classname" role="banner" id="start">
-        <header id="header">
+        <header id="header" class="fixed">
             <div class="header-content clearfix"> <a class="logo" href="index.html">
             <span itemprop="name">SPRINT 2018</span></a>
-            <nav class="navigation" role="navigation">
+            <nav class="navigation" role="navigation" style="padding-top: 5px;">
             <ul class="primary-nav">
                 <li><a href="#intro">About</a></li>
                 <li><a href="#events">Events</a></li>
@@ -302,14 +302,12 @@
       <tr>
       <td><a href="rulebook.pdf"><img src="icons/download.png" style="cursor: pointer;"></a></td>
       <td><div data-toggle="modal" data-target="#register_modal" style="cursor: pointer;" id="registration_icon"><img src="icons/register.png" alt=""></div></td>
+      <td><div style="cursor: pointer;" id="registration_icon"><a href="register.html" target="_blank"><img src="icons/register.png" alt=""></a></div></td>
     </tr>
     <tr>
-      <td>
-    <a class="btn btn-priary reg_btn"  href="rulebook.pdf">Rulebook</a>
-  </td>
-  <td>
-    <a class="btn btn-priary reg_btn" data-toggle="modal" data-target="#register_modal">Register</a>
-  </td>
+      <td><a class="btn btn-priary reg_btn"  href="rulebook.pdf">Rulebook</a></td>
+      <td><a class="btn btn-priary reg_btn" data-toggle="modal" data-target="#register_modal">Register</a></td>
+      <td><a class="btn btn-priary reg_btn" href="register.html" target="_blank">Register</a></td>
   </tr>
   </table>
     </div>
@@ -1099,7 +1097,7 @@
                         <input type="submit" id="submit" name="send" class="submitBnt" value="Send your query" />
                         <div id="simple-msg"></div>
                     </form>
-                    <br><br><br><br>
+                    <br><br><br><br><br>
                 </div>
             </div>
         </div>
@@ -1108,7 +1106,7 @@
 
     <!--  Footer section  -->
     <footer class="footer">
-        <div class="footer-top section">
+        <div class="footer-top">
             <div class="container">
                 <div class="row">
                     <div class="footer-col col-md-3">
@@ -1121,16 +1119,18 @@
                             <br> Tel: +91-22-2623-0396/2401</p>
                     </div>
 
-                    
-                    <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3769.609538195263!2d72.835368!3d19.124778!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb21f38cb0efce957!2sS.+P.+Jain+Business+School+in+Mumbai%2C+India!5e0!3m2!1sen!2sus!4v1513053179722" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    <div class="footer-col col-md-3">      
+                      <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3769.609538195263!2d72.835368!3d19.124778!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb21f38cb0efce957!2sS.+P.+Jain+Business+School+in+Mumbai%2C+India!5e0!3m2!1sen!2sus!4v1513053179722" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
 
+                    <div class="footer-col col-md-3">
+                    </div>
                     <div class="footer-col col-md-3">
                         <h3>Find us on</h3>
                         <ul class="footer-share">
-                            <li><a ><i class="fa fa-facebook"></i></a></li>
-                            <li><a ><i class="fa fa-twitter"></i></a></li>
-                            <li><a ><i class="fa fa-linkedin"></i></a></li>
-                            <li><a ><i class="fa fa-google-plus"></i></a></li>
+                            <li><a href="https://www.facebook.com/SpjimrSprint/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/sprint_spjimr" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="https://www.instagram.com/spjimr_sprint/" target="_blank"><i class="fa fa-instagram"></i></a></li>
                         </ul>
                     </div>
                 </div>
