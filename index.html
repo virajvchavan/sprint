@@ -197,7 +197,8 @@
 
         #map{
                 height: 250px;
-                width: 450px;
+                width: auto;
+                padding-left: 15px;
         }
     </style>
 </head>
@@ -296,16 +297,18 @@
     <a class="btn btn-priary reg_btn"  href="rulebook.pdf">Rulebook</a>
   </td>
   <td>
-    <a class="btn btn-priary reg_btn" data-toggle="modal" data-target="#register_modal">Register</a></td>
+    <a class="btn btn-priary reg_btn" data-toggle="modal" data-target="#register_modal">Register</a>
+  </td>
   </tr>
   </table>
     </div>
 
     <div class="modal fade" id="register_modal" role="dialog">
           <div class="modal-dialog">
-            <div class="modal-content">
+            <div class="modal-content" style="background-color: #292639;">
               <div class="modal-body" style="height: 550px;">
-                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe8Gr0uxwyuwR981pMjAnfbS_8a6ZY2SDNt3wGmeQ0_KULcNw/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+                <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe8Gr0uxwyuwR981pMjAnfbS_8a6ZY2SDNt3wGmeQ0_KULcNw/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> -->
+                  <div class="typeform-widget" data-url="https://anwesha6.typeform.com/to/GqFlss" style="width: 100%; height: 100%;" > </div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;" ></div>
               </div>
               <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

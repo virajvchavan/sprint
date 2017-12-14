@@ -138,7 +138,9 @@ ul li {
 }
 #header.fixed {
 	position: fixed;
-	background:none;
+	background-image: url('../images/headerbg.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 #header.fixed a{
 	color: #fff;
@@ -777,17 +779,17 @@ padding:15px 30px 15px 30px;
 	background-size: cover;
 	background-position: top center;
 	min-height: 650px;
-}
-.works{
-	padding-left: 0;
-	padding-right: 0;
-}
-#sponsors .col-xs-6 {
-    width: 48%;
-}
-.sponsor_outer{
-	margin-left: 1%;
-}
+	}
+	.works{
+		padding-left: 0;
+		padding-right: 0;
+	}
+	#sponsors .col-xs-6 {
+	    width: 48%;
+	}
+	.sponsor_outer{
+		margin-left: 1%;
+	}
 }
 
 @-moz-keyframes bounce {
