@@ -35,7 +35,7 @@ $(document).ready(function() {
 	    	if (cur_pos >= top && cur_pos <= bottom) {
 	      		nav.find('a').removeClass('active');
 	      		nav.find('a[href="#'+$(this).attr('id')+'"]').addClass('active');
-	    	}
+	    	} 
 	  	});
 	});
 	nav.find('a').on('click', function () {
@@ -96,7 +96,7 @@ $.scrollify({
     setHeights: true,
     overflowScroll: true,
     updateHash: true,
-    touchScroll:true,
+    touchScroll:false,
     before:function() {},
     after:function() {},
     afterResize:function() {},
