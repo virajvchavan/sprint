@@ -73,10 +73,10 @@
             left: 20px;
             -webkit-animation-name: runner_animate;
             /* Safari 4.0 - 8.0 */
-            -webkit-animation-duration: 3s;
+            -webkit-animation-duration: 2s;
             /* Safari 4.0 - 8.0 */
             animation-name: runner_animate;
-            animation-duration: 3s;
+            animation-duration: 2s;
             -webkit-animation-play-state: paused;
             /* Safari 4.0 - 8.0 */
             animation-play-state: paused;
@@ -127,10 +127,10 @@
         #index {
             -webkit-animation-name: animate_index;
             /* Safari 4.0 - 8.0 */
-            -webkit-animation-duration: 3s;
+            -webkit-animation-duration: 2s;
             /* Safari 4.0 - 8.0 */
             animation-name: animate_index;
-            animation-duration: 3s;
+            animation-duration: 2s;
             -webkit-animation-play-state: paused;
             /* Safari 4.0 - 8.0 */
             animation-play-state: paused;
@@ -164,10 +164,10 @@
             right: 20px;
             -webkit-animation-name: runner_warrior;
             /* Safari 4.0 - 8.0 */
-            -webkit-animation-duration: 3s;
+            -webkit-animation-duration: 2s;
             /* Safari 4.0 - 8.0 */
             animation-name: runner_warrior;
-            animation-duration: 3s;
+            animation-duration: 2s;
             -webkit-animation-play-state: paused;
             /* Safari 4.0 - 8.0 */
             animation-play-state: paused;
@@ -230,6 +230,7 @@
             <span itemprop="name">SPRINT 2018</span></a>
             <nav class="navigation" role="navigation" style="padding-top: 5px;">
             <ul class="primary-nav">
+                <li><a href="register.html" target="_blank">Register</a></li>
                 <li><a href="#intro">About</a></li>
                 <li><a href="#events">Events</a></li>
                 <li><a href="#gallery">Gallery</a></li>
@@ -300,30 +301,14 @@
     <div class="pull-right" style="padding:5px; margin-right: 80px;">
     <table id="downtable">
       <tr>
-      <td><a href="rulebook.pdf"><img src="icons/download.png" style="cursor: pointer;"></a></td>
-      <td><div data-toggle="modal" data-target="#register_modal" style="cursor: pointer;" id="registration_icon"><img src="icons/register.png" alt=""></div></td>
+      <td><a href="rulebook.pdf" target="_blank"><img src="icons/download.png" style="cursor: pointer;"></a></td>
       <td><div style="cursor: pointer;" id="registration_icon"><a href="register.html" target="_blank"><img src="icons/register.png" alt=""></a></div></td>
     </tr>
     <tr>
-      <td><a class="btn btn-priary reg_btn"  href="rulebook.pdf">Rulebook</a></td>
-      <td><a class="btn btn-priary reg_btn" data-toggle="modal" data-target="#register_modal">Register</a></td>
+      <td><a class="btn btn-priary reg_btn"  href="rulebook.pdf" target="_blank">Rulebook</a></td>
       <td><a class="btn btn-priary reg_btn" href="register.html" target="_blank">Register</a></td>
   </tr>
   </table>
-    </div>
-
-    <div class="modal fade" id="register_modal" role="dialog">
-          <div class="modal-dialog">
-            <div class="modal-content" style="background-color: #292639;">
-              <div class="modal-body" style="height: 550px;">
-                <!-- <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe8Gr0uxwyuwR981pMjAnfbS_8a6ZY2SDNt3wGmeQ0_KULcNw/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe> -->
-                  <div class="typeform-widget" data-url="https://anwesha6.typeform.com/to/GqFlss" style="width: 100%; height: 100%;" > </div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;" ></div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-              </div>
-            </div>
-          </div>
     </div>
 
   </h5>
@@ -334,7 +319,7 @@
         <br>
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-1">
+                <div class="col-md-3 col-sm-5 services text-center" data-toggle="modal" data-target="#formal-1">
                     <span class="icon"><img src="icons/tennis.png" alt="" class="event_logo"/></span>
                     <div class="services-content">
                         <h5>Tennis</h5>
@@ -345,26 +330,22 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <button type="button" class="close" datadismiss="modal">×</button>
+                                <button type="button" class="close" data-dismiss="modal">×</button>
                                 <h4 class="modal-title">Tennis</h4>
                             </div>
                             <div class="modal-body">
                                 <img src="images/tennis.jpg" alt="tennis" class="event_image" />
-                                <h5>Prizes:</h5>
-                                <ul>
-                                    <li><b>Winner:-</b> Coming Soon.</li>
-                                    <li><b>Runner:-</b> Coming Soon </li>
-                                </ul>
-                                <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b> 9001850454 (Karthik Chibber)
+                                
+                                <h4>Contact</h4> <b><i class="fa fa-phone" ></i></b> 9001850454 (Karthik Chibber)
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-3">
+                <div class="col-md-3 col-sm-5 services text-center" data-toggle="modal" data-target="#formal-3">
                     <span class="icon"><img src="icons/football.png" alt=""/></span>
                     <div class="services-content">
                         <h5>Football</h5>
@@ -375,26 +356,22 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <button type="button" class="close" datadismiss="modal">×</button>
+                                <button type="button" class="close" data-dismiss="modal">×</button>
                                 <h4 class="modal-title">Football</h4>
                             </div>
                             <div class="modal-body">
                                 <img src="images/football.jpg" alt="football" class="event_image" />
-                                <h5>Prizes:</h5>
-                                <ul>
-                                    <li><b>Winner:-</b> Coming Soon.</li>
-                                    <li><b>Runner:-</b> Coming Soon </li>
-                                </ul>
-                                <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b> 9868820296 (Yash Mathur)
+                                
+                                <h4>Contact</h4> <b><i class="fa fa-phone" ></i></b> 9868820296 (Yash Mathur)
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-4">
+                <div class="col-md-3 col-sm-5 services text-center" data-toggle="modal" data-target="#formal-4">
                     <span class="icon"><img src="icons/cricket.png" alt=""/></span>
                     <div class="services-content">
                         <h5>Cricket</h5>
@@ -405,26 +382,22 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <button type="button" class="close" datadismiss="modal">×</button>
+                                <button type="button" class="close" data-dismiss="modal">×</button>
                                 <h4 class="modal-title">Cricket</h4>
                             </div>
                             <div class="modal-body">
                                 <img src="images/cricket.jpg" alt="cricket" class="event_image" />
-                                <h5>Prizes:</h5>
-                                <ul>
-                                    <li><b>Winner:-</b> Coming Soon.</li>
-                                    <li><b>Runner:-</b> Coming Soon </li>
-                                </ul>
-                                <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b> 9874461030 (Abhratanu Dutta)
+                                
+                                <h4>Contact</h4> <b><i class="fa fa-phone" ></i></b> 9874461030 (Abhratanu Dutta)
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-5">
+                <div class="col-md-3 col-sm-5 services text-center" data-toggle="modal" data-target="#formal-5">
                     <span class="icon"><img src="icons/volleyball.png" alt=""/></span>
                     <div class="services-content">
                         <h5>Volleyball</h5>
@@ -435,26 +408,22 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <button type="button" class="close" datadismiss="modal">×</button>
+                                <button type="button" class="close" data-dismiss="modal">×</button>
                                 <h4 class="modal-title">Volleyball</h4>
                             </div>
                             <div class="modal-body">
                                 <img src="images/volleyball.jpg" alt="volleyball" class="event_image" />
-                                <h5>Prizes:</h5>
-                                <ul>
-                                    <li><b>Winner:-</b> Coming Soon.</li>
-                                    <li><b>Runner:-</b> Coming Soon </li>
-                                </ul>
-                                <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b> 9711367610 (Bhawna Sharma)
+                                
+                                <h4>Contact</h4> <b><i class="fa fa-phone" ></i></b> 9711367610 (Bhawna Sharma)
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-6">
+                <div class="col-md-3 col-sm-5 services text-center" data-toggle="modal" data-target="#formal-6">
                     <span class="icon"><img src="icons/badminton.png" alt=""/></span>
                     <div class="services-content">
                         <h5>Badminton</h5>
@@ -465,26 +434,22 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <button type="button" class="close" datadismiss="modal">×</button>
+                                <button type="button" class="close" data-dismiss="modal">×</button>
                                 <h4 class="modal-title">Badminton</h4>
                             </div>
                             <div class="modal-body">
                                 <img src="images/badminton.jpg" alt="badminton" class="event_image" />
-                                <h5>Prizes:</h5>
-                                <ul>
-                                    <li><b>Winner:-</b> Coming Soon.</li>
-                                    <li><b>Runner:-</b> Coming Soon </li>
-                                </ul>
-                                <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b> 9008836569 (Nitin Samanta)
+                                
+                                <h4>Contact</h4> <b><i class="fa fa-phone" ></i></b> 9008836569 (Nitin Samanta)
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-7">
+                <div class="col-md-3 col-sm-5 services text-center" data-toggle="modal" data-target="#formal-7">
                     <span class="icon"><img src="icons/futsal.png" alt=""/></span>
                     <div class="services-content">
                         <h5>Futsal</h5>
@@ -495,26 +460,22 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <button type="button" class="close" datadismiss="modal">×</button>
+                                <button type="button" class="close" data-dismiss="modal">×</button>
                                 <h4 class="modal-title">Futsal</h4>
                             </div>
                             <div class="modal-body">
                                 <img src="images/futsal.jpg" alt="futsal" class="event_image" />
-                                <h5>Prizes:</h5>
-                                <ul>
-                                    <li><b>Winner:-</b> Coming Soon.</li>
-                                    <li><b>Runner:-</b> Coming Soon </li>
-                                </ul>
-                                <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b> 9674526424 (Gaurav Patel)
+                                
+                                <h4>Contact</h4> <b><i class="fa fa-phone" ></i></b> 9674526424 (Gaurav Patel)
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-8">
+                <div class="col-md-3 col-sm-5 services text-center" data-toggle="modal" data-target="#formal-8">
                     <span class="icon"><img src="icons/running.png" alt=""/></span>
                     <div class="services-content">
                         <h5>Athletics</h5>
@@ -525,26 +486,22 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <button type="button" class="close" datadismiss="modal">×</button>
+                                <button type="button" class="close" data-dismiss="modal">×</button>
                                 <h4 class="modal-title">Athletics</h4>
                             </div>
                             <div class="modal-body">
                                 <img src="images/athletics.jpg" alt="athletics" class="event_image" />
-                                <h5>Prizes:</h5>
-                                <ul>
-                                    <li><b>Winner:-</b> Coming Soon.</li>
-                                    <li><b>Runner:-</b> Coming Soon </li>
-                                </ul>
-                                <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b> 8087000820 (Prashant Iyer)
+                                
+                                <h4>Contact</h4> <b><i class="fa fa-phone" ></i></b> 8087000820 (Prashant Iyer)
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-9">
+                <div class="col-md-3 col-sm-5 services text-center" data-toggle="modal" data-target="#formal-9">
                     <span class="icon"><img src="icons/basketball.png" alt=""/></span>
                     <div class="services-content">
                         <h5>Basketball</h5>
@@ -555,26 +512,22 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <button type="button" class="close" datadismiss="modal">×</button>
+                                <button type="button" class="close" data-dismiss="modal">×</button>
                                 <h4 class="modal-title">Basketball</h4>
                             </div>
                             <div class="modal-body">
                                 <img src="images/basketball.jpg" alt="basketball" class="event_image " />
-                                <h5>Prizes:</h5>
-                                <ul>
-                                    <li><b>Winner:-</b> Coming Soon.</li>
-                                    <li><b>Runner:-</b> Coming Soon </li>
-                                </ul>
-                                <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b> 7200788404 (Himamshu)
+                                
+                                <h4>Contact</h4> <b><i class="fa fa-phone" ></i></b> 7200788404 (Himamshu)
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-10">
+                <div class="col-md-3 col-sm-5 services text-center" data-toggle="modal" data-target="#formal-10">
                     <span class="icon"><img src="icons/carrom.png" alt=""/></span>
                     <div class="services-content">
                         <h5>Carrom</h5>
@@ -585,26 +538,22 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <button type="button" class="close" datadismiss="modal">×</button>
+                                <button type="button" class="close" data-dismiss="modal">×</button>
                                 <h4 class="modal-title">Carrom</h4>
                             </div>
                             <div class="modal-body">
                                 <img src="images/carrom.jpg" alt="carrom" class="event_image" />
-                                <h5>Prizes:</h5>
-                                <ul>
-                                    <li><b>Winner:-</b> Coming Soon.</li>
-                                    <li><b>Runner:-</b> Coming Soon </li>
-                                </ul>
-                                <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b> 9825179269 (Saurabh Sinha)
+                                
+                                <h4>Contact</h4> <b><i class="fa fa-phone" ></i></b> 9825179269 (Saurabh Sinha)
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-11">
+                <div class="col-md-3 col-sm-5 services text-center" data-toggle="modal" data-target="#formal-11">
                     <span class="icon"><img src="icons/table-tennis.png" alt=""/></span>
                     <div class="services-content">
                         <h5>Table Tennis</h5>
@@ -615,26 +564,22 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <button type="button" class="close" datadismiss="modal">×</button>
+                                <button type="button" class="close" data-dismiss="modal">×</button>
                                 <h4 class="modal-title">Table Tennis</h4>
                             </div>
                             <div class="modal-body">
                                 <img src="images/table-tennis.jpg" alt="table-tennis" class="event_image" />
-                                <h5>Prizes:</h5>
-                                <ul>
-                                    <li><b>Winner:-</b> Coming Soon.</li>
-                                    <li><b>Runner:-</b> Coming Soon </li>
-                                </ul>
-                                <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b> 7022250565 (Sidhant Malhotra) </p>
+                                
+                                <h4>Contact</h4> <b><i class="fa fa-phone" ></i></b> 7022250565 (Sidhant Malhotra) </p>
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-12">
+                <div class="col-md-3 col-sm-5 services text-center" data-toggle="modal" data-target="#formal-12">
                     <span class="icon"><img src="icons/squash.png" alt=""/></span>
                     <div class="services-content">
                         <h5>Squash</h5>
@@ -645,51 +590,70 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <button type="button" class="close" datadismiss="modal">×</button>
+                                <button type="button" class="close" data-dismiss="modal">×</button>
                                 <h4 class="modal-title">Squash</h4>
                             </div>
                             <div class="modal-body">
                                 <img src="images/squash.jpg" alt="squash" class="event_image" />
-                                <h5>Prizes:</h5>
-                                <ul>
-                                    <li><b>Winner:-</b> Coming Soon.</li>
-                                    <li><b>Runner:-</b> Coming Soon </li>
-                                </ul>
-                                <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b> 8853022987 (Rajat Jain)
+                                
+                                <h4>Contact</h4> <b><i class="fa fa-phone" ></i></b> 8853022987 (Rajat Jain)
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#formal-13">
+                <div class="col-md-3 col-sm-5 services text-center" data-toggle="modal" data-target="#formal-13">
                     <span class="icon"><img src="icons/crown.png" alt=""/></span>
                     <div class="services-content">
                         <h5>Chess</h5>
                         <b><i class="fa fa-phone" ></i></b> Pallav Joshi  (9662678208)
                     </div>
                 </div>
-            </div>
+            
             <div class="modal fade" id="formal-13" role="dialog">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <button type="button" class="close" datadismiss="modal">×</button>
+                            <button type="button" class="close" data-dismiss="modal">×</button>
                             <h4 class="modal-title">Chess</h4>
                         </div>
                         <div class="modal-body">
                             <img src="images/chess.jpg" alt="chess" class="event_image" />
-                            <h5>Prizes:</h5>
-                            <ul>
-                                <li><b>Winner:-</b> Coming Soon.</li>
-                                <li><b>Runner:-</b> Coming Soon </li>
-                            </ul>
-                            <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b> 9662678208 (Pallav Joshi)
+                        
+                            <h4>Contact</h4> <b><i class="fa fa-phone" ></i></b> 9662678208 (Pallav Joshi)
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-5 services text-center" data-toggle="modal" data-target="#informal-5">
+                    <span class="icon"><img src="icons/lan.png" alt=""/></span>
+                    <div class="services-content">
+                        <h5>LAN Gaming</h5>
+                         <b><i class="fa fa-phone" ></i></b> 8295800295 (Rahul Gupta)
+                    </div>
+                </div>
+
+                <div class="modal fade" id="informal-5" role="dialog">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <button type="button" class="close" data-dismiss="modal">×</button>
+                                <h4 class="modal-title">LAN Gaming</h4>
+                            </div>
+                            <div class="modal-body">
+                                <img src="images/langaming.jpg" alt="slip-soccer" class="event_image" />
+                                
+                                <h4>Contact</h4> <b><i class="fa fa-phone" ></i></b> 8295800295 (Rahul Gupta)
+                            </div>
+                            <div class="modal-footer">
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -698,7 +662,7 @@
         <h5 style="padding: 10px;">Informal Events </h5>
         <div class="container">
             <div class="row">
-                <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#informal-1">
+                <div class="col-md-3 col-sm-5 services text-center" data-toggle="modal" data-target="#informal-1">
                     <span class="icon"><img src="icons/foosball.png" alt=""/></span>
                     <div class="services-content">
                         <h5>Foosball</h5>
@@ -709,26 +673,22 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <button type="button" class="close" datadismiss="modal">×</button>
+                                <button type="button" class="close" data-dismiss="modal">×</button>
                                 <h4 class="modal-title">Foosball</h4>
                             </div>
                             <div class="modal-body">
                                 <img src="images/foosball.jpg" alt="foosball" class="event_image" />
-                                <h5>Prizes:</h5>
-                                <ul>
-                                    <li><b>Winner:-</b> Coming Soon.</li>
-                                    <li><b>Runner:-</b> Coming Soon </li>
-                                </ul>
-                                <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b> 8989474084 (Subrat Sharma)
+                                
+                                <h4>Contact</h4> <b><i class="fa fa-phone" ></i></b> 8989474084 (Subrat Sharma)
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#informal-2">
+                <div class="col-md-3 col-sm-5 services text-center" data-toggle="modal" data-target="#informal-2">
                     <span class="icon"><img src="icons/zorbing.png" alt=""/></span>
                     <div class="services-content">
                         <h5>Zorbing</h5>
@@ -739,26 +699,22 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <button type="button" class="close" datadismiss="modal">×</button>
+                                <button type="button" class="close" data-dismiss="modal">×</button>
                                 <h4 class="modal-title">Zorbing</h4>
                             </div>
                             <div class="modal-body">
                                 <img src="images/zorbing.jpg" alt="zorbing" class="event_image" />
-                                <h5>Prizes:</h5>
-                                <ul>
-                                    <li><b>Winner:-</b> Coming Soon.</li>
-                                    <li><b>Runner:-</b> Coming Soon </li>
-                                </ul>
-                                <h5>Contact</h5> <b><i class="fa fa-phone"></i></b> 9674527335 (Yash Vardhan Goenka)
+                                
+                                <h4>Contact</h4> <b><i class="fa fa-phone"></i></b> 9674527335 (Yash Vardhan Goenka)
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#informal-3">
+                <div class="col-md-3 col-sm-5 services text-center" data-toggle="modal" data-target="#informal-3">
                     <span class="icon"><img src="icons/paintball.png" alt=""/></span>
                     <div class="services-content">
                         <h5>Paintball</h5>
@@ -769,26 +725,22 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <button type="button" class="close" datadismiss="modal">×</button>
+                                <button type="button" class="close" data-dismiss="modal">×</button>
                                 <h4 class="modal-title">Paintball</h4>
                             </div>
                             <div class="modal-body">
                                 <img src="images/paintball.jpg" alt="paintball" class="event_image" />
-                                <h5>Prizes:</h5>
-                                <ul>
-                                    <li><b>Winner:-</b> Coming Soon.</li>
-                                    <li><b>Runner:-</b> Coming Soon </li>
-                                </ul>
-                                <h5>Contact</h5><b><i class="fa fa-phone"></i></b> 8295800295 (Rahul Gupta)
+                                
+                                <h4>Contact</h4><b><i class="fa fa-phone"></i></b> 8295800295 (Rahul Gupta)
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
                 </div>
 
-                <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#informal-4">
+                <div class="col-md-3 col-sm-5 services text-center" data-toggle="modal" data-target="#informal-4">
                     <span class="icon"><img src="icons/slip.png" alt=""/></span>
                     <div class="services-content">
                         <h5>Slip Soccer</h5>
@@ -799,56 +751,20 @@
                     <div class="modal-dialog">
                         <div class="modal-content">
                             <div class="modal-header">
-                                <button type="button" class="close" datadismiss="modal">×</button>
+                                <button type="button" class="close" data-dismiss="modal">×</button>
                                 <h4 class="modal-title">Slip Soccer</h4>
                             </div>
                             <div class="modal-body">
                                 <img src="images/slip-soccer.jpg" alt="slip-soccer" class="event_image" />
-                                <h5>Prizes:</h5>
-                                <ul>
-                                    <li><b>Winner:-</b> Coming Soon.</li>
-                                    <li><b>Runner:-</b> Coming Soon </li>
-                                </ul>
-                                <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b> 7093322302 (Ankit Yadav)
+                                
+                                <h4>Contact</h4> <b><i class="fa fa-phone" ></i></b> 7093322302 (Ankit Yadav)
                             </div>
                             <div class="modal-footer">
-                                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
+                                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                             </div>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-md-3 col-sm-5 services text-center" datatoggle="modal" datatarget="#informal-5">
-                    <span class="icon"><img src="icons/lan.png" alt=""/></span>
-                    <div class="services-content">
-                        <h5>LAN Gaming</h5>
-                        <!-- <b><i class="fa fa-phone" ></i></b> 7093322302 (Ankit Yadav) -->
-                    </div>
-                </div>
-
-                <div class="modal fade" id="informal-5" role="dialog">
-                    <div class="modal-dialog">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <button type="button" class="close" datadismiss="modal">×</button>
-                                <h4 class="modal-title">LAN Gaming</h4>
-                            </div>
-                            <div class="modal-body">
-                                <img src="images/lan.png" alt="slip-soccer" class="event_image" />
-                                <h5>Prizes:</h5>
-                                <ul>
-                                    <li><b>Winner:-</b> Coming Soon.</li>
-                                    <li><b>Runner:-</b> Coming Soon </li>
-                                </ul>
-                                <h5>Contact</h5> <b><i class="fa fa-phone" ></i></b> 7093322302 (Ankit Yadav)
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-default" datadismiss="modal">Close</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
 
             </div>
         </div>
@@ -1115,17 +1031,19 @@
                             SPJIMR
                             <br> Bhavan's Campus
                             <br> Munshi Nagar | Dadabhai Road
-                            <br> Andheri West | Mumbai, 400 058, India
-                            <br> Tel: +91-22-2623-0396/2401</p>
+                            <br> Andheri West | Mumbai, 400 058, India</p>
                     </div>
 
                     <div class="footer-col col-md-3">      
                       <iframe id="map" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3769.609538195263!2d72.835368!3d19.124778!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb21f38cb0efce957!2sS.+P.+Jain+Business+School+in+Mumbai%2C+India!5e0!3m2!1sen!2sus!4v1513053179722" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
                     </div>
 
+                    <div class="footer-col col-md-3"></div>
+            
                     <div class="footer-col col-md-3">
-                    </div>
-                    <div class="footer-col col-md-3">
+                        <h3>Contact</h3>
+                            <b>Sreenath Nair</b> (8907980431) <br>
+                            <b>Deep Shah</b> (9819953064)<br><br>
                         <h3>Find us on</h3>
                         <ul class="footer-share">
                             <li><a href="https://www.facebook.com/SpjimrSprint/" target="_blank"><i class="fa fa-facebook"></i></a></li>
@@ -1170,9 +1088,9 @@
                 setTimeout(function() {
                     $('#index').remove();
 
-                }, 2000);
+                }, 1600);
 
-            }, 2000);
+            }, 1600);
 
             $("#enterBtn").css('display', 'none');
         }
