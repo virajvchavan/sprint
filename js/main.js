@@ -1,18 +1,17 @@
 $(document).ready(function() {
-	// // Header Scroll
-	// $(window).on('scroll', function() {
-	// 	var scroll = $(window).scrollTop();
+	// Header Scroll
+	$('#fixedbutton').hide();
+	$(window).on('scroll', function() {
+		var scroll = $(window).scrollTop();
 
-	// 	if ($(window).width() > 520) {
-	// 		   if (scroll >= 60) {
-	// 				$('#header').addClass('fixed');
-	// 				} 
-	// 				else 
-	// 				{
-	// 					$('#header').removeClass('fixed');
-	// 				}
-	// 		}		
-	// });
+			   if (scroll >= 60) {
+					$('#fixedbutton').show();
+					} 
+					else 
+					{
+						$('#fixedbutton').hide();
+					}		
+	});
 
 	// Fancybox
 	$('.work-box').fancybox();
