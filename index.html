@@ -230,7 +230,8 @@
             <span itemprop="name">SPRINT 2018</span></a>
             <nav class="navigation" role="navigation" style="padding-top: 5px;">
             <ul class="primary-nav">
-                <li><a href="register.html" target="_blank">Register</a></li>
+                <li><a style = "cursor: pointer;" data-toggle="modal" data-target="#register_modal">Register</a></li>
+                <li><a href="rulebook.pdf" target="_blank">Rulebook</a></li>
                 <li><a href="#intro">About</a></li>
                 <li><a href="#events">Events</a></li>
                 <li><a href="#gallery">Gallery</a></li>
@@ -246,7 +247,7 @@
                 <div class="banner-text text-center">
                     <img id="runner" src="icons/runningMan.png">
                     <img id="warrior" src="icons/warrior.png">
-                    <span style="color: white; font-size: 16px;"><b>SPJIMR Presents</b></span>
+                    <span style="color: white; font-size: 16px;"><b><span style="font-size: 21px;">SPJIMR</span> Presents</b></span>
                     <br>
                     <img src="icons/sprint.png" id="main_logo" />
                     <br>
@@ -302,15 +303,28 @@
     <table id="downtable">
       <tr>
       <td><a href="rulebook.pdf" target="_blank"><img src="icons/download.png" style="cursor: pointer;"></a></td>
-      <td><div style="cursor: pointer;" id="registration_icon"><a href="register.html" target="_blank"><img src="icons/register.png" alt=""></a></div></td>
+      <!-- <td><div style="cursor: pointer;" id="registration_icon"><a href="register.html" target="_blank"><img src="icons/register.png" alt=""></a></div></td> -->
+      <td><div data-toggle="modal" data-target="#register_modal" style="cursor: pointer;" id="registration_icon"><img src="icons/register.png" alt=""></div></td>
     </tr>
     <tr>
       <td><a class="btn btn-priary reg_btn"  href="rulebook.pdf" target="_blank">Rulebook</a></td>
-      <td><a class="btn btn-priary reg_btn" href="register.html" target="_blank">Register</a></td>
+      <td><a data-toggle="modal" data-target="#register_modal" class="btn btn-priary reg_btn" >Register</a></td>
   </tr>
   </table>
     </div>
 
+     <div class="modal fade" id="register_modal" role="dialog">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-body" style="height: 550px;">
+                <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSe8Gr0uxwyuwR981pMjAnfbS_8a6ZY2SDNt3wGmeQ0_KULcNw/viewform?embedded=true" width="100%" height="100%" frameborder="0" marginheight="0" marginwidth="0">Loading...</iframe>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+    </div>
   </h5>
         <br>
         <br>
@@ -323,7 +337,7 @@
                     <span class="icon"><img src="icons/tennis.png" alt="" class="event_logo"/></span>
                     <div class="services-content">
                         <h5>Tennis</h5>
-                        <b><i class="fa fa-phone" ></i></b> Karthik Chibber (9001850454)
+                         Karthik Chibber (<b><i class="fa fa-phone" ></i></b> 9001850454)
                     </div>
                 </div>
                 <div class="modal fade" id="formal-1" role="dialog">
@@ -336,7 +350,8 @@
                             <div class="modal-body">
                                 <img src="images/tennis.jpg" alt="tennis" class="event_image" />
                                 
-                                <h4>Contact</h4> <b><i class="fa fa-phone" ></i></b> 9001850454 (Karthik Chibber)
+                                <h4>Contact</h4> 
+                                Karthik Chibber (<b><i class="fa fa-phone" ></i></b> 9001850454)
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -349,7 +364,7 @@
                     <span class="icon"><img src="icons/football.png" alt=""/></span>
                     <div class="services-content">
                         <h5>Football</h5>
-                        <b><i class="fa fa-phone" ></i></b> Yash Mathur (9868820296)
+                        Yash Mathur (<b><i class="fa fa-phone" ></i></b>  9868820296)
                     </div>
                 </div>
                 <div class="modal fade" id="formal-3" role="dialog">
@@ -362,7 +377,8 @@
                             <div class="modal-body">
                                 <img src="images/football.jpg" alt="football" class="event_image" />
                                 
-                                <h4>Contact</h4> <b><i class="fa fa-phone" ></i></b> 9868820296 (Yash Mathur)
+                                <h4>Contact</h4> 
+                                Yash Mathur (<b><i class="fa fa-phone" ></i></b>  9868820296)
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -375,7 +391,7 @@
                     <span class="icon"><img src="icons/cricket.png" alt=""/></span>
                     <div class="services-content">
                         <h5>Cricket</h5>
-                        <b><i class="fa fa-phone" ></i></b> Abhratanu Dutta (9874461030)
+                         Abhratanu Dutta (<b><i class="fa fa-phone" ></i></b> 9874461030)
                     </div>
                 </div>
                 <div class="modal fade" id="formal-4" role="dialog">
@@ -388,7 +404,7 @@
                             <div class="modal-body">
                                 <img src="images/cricket.jpg" alt="cricket" class="event_image" />
                                 
-                                <h4>Contact</h4> <b><i class="fa fa-phone" ></i></b> 9874461030 (Abhratanu Dutta)
+                                <h4>Contact</h4> Abhratanu Dutta (<b><i class="fa fa-phone" ></i></b> 9874461030)
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -401,7 +417,7 @@
                     <span class="icon"><img src="icons/volleyball.png" alt=""/></span>
                     <div class="services-content">
                         <h5>Volleyball</h5>
-                        <b><i class="fa fa-phone" ></i></b> Bhawna Sharma (9711367610)
+                         Bhawna Sharma (<b><i class="fa fa-phone" ></i></b> 9711367610)
                     </div>
                 </div>
                 <div class="modal fade" id="formal-5" role="dialog">
@@ -414,7 +430,7 @@
                             <div class="modal-body">
                                 <img src="images/volleyball.jpg" alt="volleyball" class="event_image" />
                                 
-                                <h4>Contact</h4> <b><i class="fa fa-phone" ></i></b> 9711367610 (Bhawna Sharma)
+                                <h4>Contact</h4> Bhawna Sharma (<b><i class="fa fa-phone" ></i></b> 9711367610)
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -427,7 +443,7 @@
                     <span class="icon"><img src="icons/badminton.png" alt=""/></span>
                     <div class="services-content">
                         <h5>Badminton</h5>
-                        <b><i class="fa fa-phone" ></i></b> Nitin Samanta (9008836569)
+                         Nitin Samanta (<b><i class="fa fa-phone" ></i></b> 9008836569)
                     </div>
                 </div>
                 <div class="modal fade" id="formal-6" role="dialog">
@@ -440,7 +456,8 @@
                             <div class="modal-body">
                                 <img src="images/badminton.jpg" alt="badminton" class="event_image" />
                                 
-                                <h4>Contact</h4> <b><i class="fa fa-phone" ></i></b> 9008836569 (Nitin Samanta)
+                                <h4>Contact</h4> 
+                                Nitin Samanta (<b><i class="fa fa-phone" ></i></b> 9008836569)
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -453,7 +470,7 @@
                     <span class="icon"><img src="icons/futsal.png" alt=""/></span>
                     <div class="services-content">
                         <h5>Futsal</h5>
-                        <b><i class="fa fa-phone" ></i></b> Gaurav Patel (9674526424)
+                         Gaurav Patel (<b><i class="fa fa-phone" ></i></b> 9674526424)
                     </div>
                 </div>
                 <div class="modal fade" id="formal-7" role="dialog">
@@ -466,7 +483,7 @@
                             <div class="modal-body">
                                 <img src="images/futsal.jpg" alt="futsal" class="event_image" />
                                 
-                                <h4>Contact</h4> <b><i class="fa fa-phone" ></i></b> 9674526424 (Gaurav Patel)
+                                <h4>Contact</h4> Gaurav Patel (<b><i class="fa fa-phone" ></i></b> 9674526424)
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -479,7 +496,7 @@
                     <span class="icon"><img src="icons/running.png" alt=""/></span>
                     <div class="services-content">
                         <h5>Athletics</h5>
-                        <b><i class="fa fa-phone" ></i></b> Prashant Iyer (8087000820)
+                         Prashant Iyer (<b><i class="fa fa-phone" ></i></b> 8087000820)
                     </div>
                 </div>
                 <div class="modal fade" id="formal-8" role="dialog">
@@ -492,7 +509,7 @@
                             <div class="modal-body">
                                 <img src="images/athletics.jpg" alt="athletics" class="event_image" />
                                 
-                                <h4>Contact</h4> <b><i class="fa fa-phone" ></i></b> 8087000820 (Prashant Iyer)
+                                <h4>Contact</h4> Prashant Iyer (<b><i class="fa fa-phone" ></i></b> 8087000820)
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -505,7 +522,7 @@
                     <span class="icon"><img src="icons/basketball.png" alt=""/></span>
                     <div class="services-content">
                         <h5>Basketball</h5>
-                        <b><i class="fa fa-phone" ></i></b> Himamshu (7200788404)
+                        Himamshu (<b><i class="fa fa-phone" ></i></b>  7200788404)
                     </div>
                 </div>
                 <div class="modal fade" id="formal-9" role="dialog">
@@ -518,7 +535,7 @@
                             <div class="modal-body">
                                 <img src="images/basketball.jpg" alt="basketball" class="event_image " />
                                 
-                                <h4>Contact</h4> <b><i class="fa fa-phone" ></i></b> 7200788404 (Himamshu)
+                                <h4>Contact</h4> Himamshu (<b><i class="fa fa-phone" ></i></b>  7200788404)
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -531,7 +548,7 @@
                     <span class="icon"><img src="icons/carrom.png" alt=""/></span>
                     <div class="services-content">
                         <h5>Carrom</h5>
-                        <b><i class="fa fa-phone" ></i></b> Saurabh Sinha (9825179269)
+                         Saurabh Sinha (<b><i class="fa fa-phone" ></i></b> 9825179269)
                     </div>
                 </div>
                 <div class="modal fade" id="formal-10" role="dialog">
@@ -544,7 +561,7 @@
                             <div class="modal-body">
                                 <img src="images/carrom.jpg" alt="carrom" class="event_image" />
                                 
-                                <h4>Contact</h4> <b><i class="fa fa-phone" ></i></b> 9825179269 (Saurabh Sinha)
+                                <h4>Contact</h4> Saurabh Sinha (<b><i class="fa fa-phone" ></i></b> 9825179269)
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -557,7 +574,7 @@
                     <span class="icon"><img src="icons/table-tennis.png" alt=""/></span>
                     <div class="services-content">
                         <h5>Table Tennis</h5>
-                        <b><i class="fa fa-phone" ></i></b> Sidhant Malhotra (7022250565)
+                        Sidhant Malhotra (<b><i class="fa fa-phone" ></i></b> 7022250565)
                     </div>
                 </div>
                 <div class="modal fade" id="formal-11" role="dialog">
@@ -570,7 +587,7 @@
                             <div class="modal-body">
                                 <img src="images/table-tennis.jpg" alt="table-tennis" class="event_image" />
                                 
-                                <h4>Contact</h4> <b><i class="fa fa-phone" ></i></b> 7022250565 (Sidhant Malhotra) </p>
+                                <h4>Contact</h4> Sidhant Malhotra (<b><i class="fa fa-phone" ></i></b> 7022250565)
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -583,7 +600,7 @@
                     <span class="icon"><img src="icons/squash.png" alt=""/></span>
                     <div class="services-content">
                         <h5>Squash</h5>
-                        <b><i class="fa fa-phone" ></i></b> Rajat Jain (8853022987)
+                         Rajat Jain (<b><i class="fa fa-phone" ></i></b> 8853022987)
                     </div>
                 </div>
                 <div class="modal fade" id="formal-12" role="dialog">
@@ -596,7 +613,7 @@
                             <div class="modal-body">
                                 <img src="images/squash.jpg" alt="squash" class="event_image" />
                                 
-                                <h4>Contact</h4> <b><i class="fa fa-phone" ></i></b> 8853022987 (Rajat Jain)
+                                <h4>Contact</h4> Rajat Jain (<b><i class="fa fa-phone" ></i></b> 8853022987)
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -609,7 +626,7 @@
                     <span class="icon"><img src="icons/crown.png" alt=""/></span>
                     <div class="services-content">
                         <h5>Chess</h5>
-                        <b><i class="fa fa-phone" ></i></b> Pallav Joshi  (9662678208)
+                        Pallav Joshi  (<b><i class="fa fa-phone" ></i></b> 9662678208)
                     </div>
                 </div>
             
@@ -623,7 +640,7 @@
                         <div class="modal-body">
                             <img src="images/chess.jpg" alt="chess" class="event_image" />
                         
-                            <h4>Contact</h4> <b><i class="fa fa-phone" ></i></b> 9662678208 (Pallav Joshi)
+                            <h4>Contact</h4> Pallav Joshi  (<b><i class="fa fa-phone" ></i></b> 9662678208)
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -635,7 +652,7 @@
                     <span class="icon"><img src="icons/lan.png" alt=""/></span>
                     <div class="services-content">
                         <h5>LAN Gaming</h5>
-                         <b><i class="fa fa-phone" ></i></b> 8295800295 (Rahul Gupta)
+                        Rahul Gupta (<b><i class="fa fa-phone" ></i></b> 8295800295)
                     </div>
                 </div>
 
@@ -649,7 +666,7 @@
                             <div class="modal-body">
                                 <img src="images/langaming.jpg" alt="slip-soccer" class="event_image" />
                                 
-                                <h4>Contact</h4> <b><i class="fa fa-phone" ></i></b> 8295800295 (Rahul Gupta)
+                                <h4>Contact</h4> Rahul Gupta (<b><i class="fa fa-phone" ></i></b> 8295800295)
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -666,7 +683,7 @@
                     <span class="icon"><img src="icons/foosball.png" alt=""/></span>
                     <div class="services-content">
                         <h5>Foosball</h5>
-                        <b><i class="fa fa-phone" ></i></b> Subrat Sharma (8989474084)
+                         Subrat Sharma (<b><i class="fa fa-phone" ></i></b> 8989474084)
                     </div>
                 </div>
                 <div class="modal fade" id="informal-1" role="dialog">
@@ -679,7 +696,7 @@
                             <div class="modal-body">
                                 <img src="images/foosball.jpg" alt="foosball" class="event_image" />
                                 
-                                <h4>Contact</h4> <b><i class="fa fa-phone" ></i></b> 8989474084 (Subrat Sharma)
+                                <h4>Contact</h4> Subrat Sharma (<b><i class="fa fa-phone" ></i></b> 8989474084)
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -692,7 +709,7 @@
                     <span class="icon"><img src="icons/zorbing.png" alt=""/></span>
                     <div class="services-content">
                         <h5>Zorbing</h5>
-                        <b><i class="fa fa-phone" ></i></b> Yash Goenka  (9674527335)
+                         Yash Goenka  (<b><i class="fa fa-phone" ></i></b> 9674527335)
                     </div>
                 </div>
                 <div class="modal fade" id="informal-2" role="dialog">
@@ -705,7 +722,7 @@
                             <div class="modal-body">
                                 <img src="images/zorbing.jpg" alt="zorbing" class="event_image" />
                                 
-                                <h4>Contact</h4> <b><i class="fa fa-phone"></i></b> 9674527335 (Yash Vardhan Goenka)
+                                <h4>Contact</h4> Yash Goenka  (<b><i class="fa fa-phone" ></i></b> 9674527335)
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -718,7 +735,7 @@
                     <span class="icon"><img src="icons/paintball.png" alt=""/></span>
                     <div class="services-content">
                         <h5>Paintball</h5>
-                        <b><i class="fa fa-phone" ></i></b>Rahul Gupta  (8295800295)
+                        Rahul Gupta  (<b><i class="fa fa-phone" ></i></b> 8295800295)
                     </div>
                 </div>
                 <div class="modal fade" id="informal-3" role="dialog">
@@ -731,7 +748,7 @@
                             <div class="modal-body">
                                 <img src="images/paintball.jpg" alt="paintball" class="event_image" />
                                 
-                                <h4>Contact</h4><b><i class="fa fa-phone"></i></b> 8295800295 (Rahul Gupta)
+                                <h4>Contact</h4>Rahul Gupta  (<b><i class="fa fa-phone" ></i></b> 8295800295)
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -744,7 +761,7 @@
                     <span class="icon"><img src="icons/slip.png" alt=""/></span>
                     <div class="services-content">
                         <h5>Slip Soccer</h5>
-                        <b><i class="fa fa-phone" ></i></b> Ankit Yadav (7093322302)
+                         Ankit Yadav (<b><i class="fa fa-phone" ></i></b> 7093322302)
                     </div>
                 </div>
                 <div class="modal fade" id="informal-4" role="dialog">
@@ -757,7 +774,7 @@
                             <div class="modal-body">
                                 <img src="images/slip-soccer.jpg" alt="slip-soccer" class="event_image" />
                                 
-                                <h4>Contact</h4> <b><i class="fa fa-phone" ></i></b> 7093322302 (Ankit Yadav)
+                                <h4>Contact</h4> Ankit Yadav (<b><i class="fa fa-phone" ></i></b> 7093322302)
                             </div>
                             <div class="modal-footer">
                                 <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
@@ -836,38 +853,6 @@
                 </div>
                 <div class="col-lg-3 col-md-6 col-sm-6 work">
                     <a href="images/volleyball.jpg" class="work-box" rel="gallery01"> <img src="images/volleyball.jpg" alt="" />
-                        <div class="overlay">
-
-                        </div>
-                        <!--  overlay  -->
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 work">
-                    <a href="images/basketball.jpg" class="work-box" rel="gallery01"> <img src="images/basketball.jpg" alt="" />
-                        <div class="overlay">
-
-                        </div>
-                        <!--  overlay  -->
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 work">
-                    <a href="images/cricket.jpg" class="work-box" rel="gallery01"> <img src="images/cricket.jpg" alt="" />
-                        <div class="overlay">
-
-                        </div>
-                        <!--  overlay  -->
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 work">
-                    <a href="images/badminton.jpg" class="work-box" rel="gallery01"> <img src="images/badminton.jpg" alt="" />
-                        <div class="overlay">
-
-                        </div>
-                        <!--  overlay  -->
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 work">
-                    <a href="images/tennis.jpg" class="work-box" rel="gallery01"> <img src="images/tennis.jpg" alt="" />
                         <div class="overlay">
 
                         </div>
@@ -1044,7 +1029,7 @@
                         <input type="submit" id="submit" name="send" class="submitBnt" value="Send your query" />
                         <div id="simple-msg"></div>
                     </form>
-                    <br><br><br><br><br>
+                    <br>
                 </div>
             </div>
         </div>
@@ -1077,9 +1062,9 @@
                             <b>Deep Shah</b> (9819953064)<br><br>
                         <h3>Find us on</h3>
                         <ul class="footer-share">
-                            <li><a href="https://www.facebook.com/SpjimrSprint/" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                            <li><a href="https://twitter.com/sprint_spjimr" target="_blank"><i class="fa fa-twitter"></i></a></li>
-                            <li><a href="https://www.instagram.com/spjimr_sprint/" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                            <li><a href="https://www.facebook.com/SpjimrSprint/" target="_blank"><h3><i class="fa fa-facebook"></i></h3></a></li>
+                            <li><a href="https://twitter.com/sprint_spjimr" target="_blank"><h3><i class="fa fa-twitter"></i></h3></a></li>
+                            <li><a href="https://www.instagram.com/spjimr_sprint/" target="_blank"><h3><i class="fa fa-instagram"></i></h3></a></li>
                         </ul>
                     </div>
                 </div>
@@ -1097,7 +1082,6 @@
     <script src="js/jquery.fancybox.pack.js"></script>
     <script src="js/retina.min.js"></script>
     <script src="js/modernizr.js"></script>
-    <script type="text/javascript" src="js/scroll.js"></script>
     <script src="js/main.js"></script>
     <script type="text/javascript" src="js/jquery.contact.js"></script>
     <!-- Start of StatCounter Code for Default Guide -->
