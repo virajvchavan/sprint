@@ -762,6 +762,9 @@ padding:15px 30px 15px 30px;
     #runner, #warrior, #index{
     	display: none;
     }
+    #gallery .col-md-1{
+    	display: none;
+    }
     #mobile_start_btn{
     	display: block;
     }
