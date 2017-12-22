@@ -793,73 +793,10 @@
     <section id="gallery" class="works section no-padding text-center example-classname">
       <br><br><br>
         <h5 style="padding-top: 10px; padding-bottom: 10px;">Gallery</h5>
+        <button onclick="previousSetOfImages()">prev</button>
+        <button onclick="nextSetOfImages()">next</button>
         <div class="container-fluid">
-            <div class="row no-gutter">
-                <div class="col-lg-3 col-md-6 col-sm-6 work">
-                    <a href="images/img-1.jpg" class="work-box" rel="gallery01"> <img src="images/img-1.jpg" alt="" />
-                        <div class="overlay">
-
-                        </div>
-                        <!--  overlay  -->
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 work">
-                    <a href="images/img-2.jpg" class="work-box" rel="gallery01"> <img src="images/img-2.jpg" alt="" />
-                        <div class="overlay">
-
-                        </div>
-                        <!--  overlay  -->
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 work">
-                    <a href="images/img-3.jpg" class="work-box" rel="gallery01"> <img src="images/img-3.jpg" alt="" />
-                        <div class="overlay">
-
-                        </div>
-                        <!--  overlay  -->
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 work">
-                    <a href="images/img-4.jpg" class="work-box" rel="gallery01"> <img src="images/img-4.jpg" alt="" />
-                        <div class="overlay">
-
-                        </div>
-                        <!--  overlay  -->
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 work">
-                    <a href="images/img-5.jpg" class="work-box" rel="gallery01"> <img src="images/img-5.jpg" alt="" />
-                        <div class="overlay">
-
-                        </div>
-                        <!--  overlay  -->
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 work">
-                    <a href="images/img-6.jpg" class="work-box" rel="gallery01"> <img src="images/img-6.jpg" alt="" />
-                        <div class="overlay">
-
-                        </div>
-                        <!--  overlay  -->
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 work">
-                    <a href="images/img-7.jpg" class="work-box" rel="gallery01"> <img src="images/img-7.jpg" alt="" />
-                        <div class="overlay">
-
-                        </div>
-                        <!--  overlay  -->
-                    </a>
-                </div>
-                <div class="col-lg-3 col-md-6 col-sm-6 work">
-                    <a href="images/volleyball.jpg" class="work-box" rel="gallery01"> <img src="images/volleyball.jpg" alt="" />
-                        <div class="overlay">
-
-                        </div>
-                        <!--  overlay  -->
-                    </a>
-                </div>
-                <br>
+            <div id="gallery_images_div" class="row no-gutter">
             </div>
         </div>
         <br>
@@ -1108,6 +1045,56 @@
             }, 1600);
 
             $("#enterBtn").css('display', 'none');
+        }
+        var noOfImagesInGallery = 16;
+        var temp='';
+        var image_index=1;
+        var display='block';
+        for(var i=1;i<=noOfImagesInGallery;i++){
+
+            if(i==9)display='none';
+            var img_url='"images/gallery/img-'+i+'.jpg"';
+
+            temp+='<div style="display:'+display+'" id="img-'+i+'" class="col-lg-3 col-md-6 col-sm-6 work">\
+                    <a href='+img_url+'class="work-box" rel="gallery01"> <img src='+img_url+' alt="" />\
+                        <div class="overlay">\
+                        </div>\
+                    </a>\
+                </div>';
+        }
+        temp+='<br>';
+        $('#gallery_images_div').append(temp);
+
+
+
+        function nextSetOfImages(){
+            if(image_index==noOfImagesInGallery-7) return;         
+            var j=image_index;
+            while(j<=image_index+7){
+                $('#img-'+j).css('display','none');
+                j++;
+            }
+
+            while(j<=image_index+15){
+                $('#img-'+j).css('display','block');
+                j++;
+            }
+            image_index+=8
+        }
+        function previousSetOfImages(){    
+            if(image_index==1) return;
+
+            var j=image_index;
+            while(j<=image_index+7){
+                $('#img-'+j).css('display','none');
+                j++;
+            }
+            j=image_index-8;
+            while(j<image_index){
+                $('#img-'+j).css('display','block');
+                j++;
+            }
+            image_index-=8;
         }
     </script>
 </body>
