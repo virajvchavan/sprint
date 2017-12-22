@@ -912,4 +912,9 @@ body{
 	padding-right: 5px;
 }
 
-
+.imgbtn{
+    border: none;
+    background: none;
+    font-size: xx-large;
+    color: white;
+}
